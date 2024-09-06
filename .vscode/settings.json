@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "tm1650.h": "c",
+        "i2c.h": "c",
+        "main.h": "c",
+        "stm32g0xx_hal.h": "c",
+        "tim.h": "c",
+        "pcf8563.h": "c",
+        "key.h": "c",
+        "time.h": "c",
+        "usart.h": "c",
+        "string.h": "c",
+        "motor.h": "c",
+        "dma.h": "c",
+        "myflash.h": "c"
+    },
+    "cortex-debug.variableUseNaturalFormat": true
+}
