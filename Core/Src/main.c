@@ -141,12 +141,12 @@ int main(void)
       }
 
       /*输出一些状态信息*/
-      char buffer[MAX_DATA_LENGTH] = {0};
+/*       char buffer[MAX_DATA_LENGTH] = {0};
       sprintf(buffer,
               "time is : %d : %d \r\n",
               pcf8563_ctrl.data_time->Hour,
               pcf8563_ctrl.data_time->Min);
-      myuart.uart_send(&myuart, buffer);
+      myuart.uart_send(&myuart, buffer); */
     }
 
     // 主线程，随时间旋转电机
