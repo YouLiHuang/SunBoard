@@ -7,7 +7,7 @@ extern MyUart myuart;
 
 static HAL_StatusTypeDef keyRespnse(void *poniter)
 {
-    userkey *key = poniter;
+    userkey *key = (userkey *)poniter;
     if (key->flag == SINGLE_CLICKED)
     {
         key->singleClickedCallback(poniter);

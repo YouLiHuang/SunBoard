@@ -5162,7 +5162,7 @@ LOAD I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-
                 0x08000000                g_pfnVectors
                 0x080000b8                        . = ALIGN (0x4)
 
-.text           0x080000b8     0x6350
+.text           0x080000b8     0x6358
                 0x080000b8                        . = ALIGN (0x4)
  *(.text)
  .text          0x080000b8       0x48 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
@@ -5222,467 +5222,467 @@ LOAD I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-
                 0x08000840      0x138 CMakeFiles/sunBoard.dir/Core/Src/i2c.c.obj
                 0x08000840                HAL_I2C_MspInit
  .text.MX_TIM1_Init
-                0x08000978       0xbc CMakeFiles/sunBoard.dir/Core/Src/tim.c.obj
+                0x08000978       0xc4 CMakeFiles/sunBoard.dir/Core/Src/tim.c.obj
                 0x08000978                MX_TIM1_Init
  .text.MX_TIM3_Init
-                0x08000a34       0xb8 CMakeFiles/sunBoard.dir/Core/Src/tim.c.obj
-                0x08000a34                MX_TIM3_Init
+                0x08000a3c       0xb8 CMakeFiles/sunBoard.dir/Core/Src/tim.c.obj
+                0x08000a3c                MX_TIM3_Init
  .text.MX_TIM14_Init
-                0x08000aec       0x58 CMakeFiles/sunBoard.dir/Core/Src/tim.c.obj
-                0x08000aec                MX_TIM14_Init
+                0x08000af4       0x58 CMakeFiles/sunBoard.dir/Core/Src/tim.c.obj
+                0x08000af4                MX_TIM14_Init
  .text.MX_TIM16_Init
-                0x08000b44       0x5c CMakeFiles/sunBoard.dir/Core/Src/tim.c.obj
-                0x08000b44                MX_TIM16_Init
+                0x08000b4c       0x5c CMakeFiles/sunBoard.dir/Core/Src/tim.c.obj
+                0x08000b4c                MX_TIM16_Init
  .text.MX_TIM17_Init
-                0x08000ba0       0x5c CMakeFiles/sunBoard.dir/Core/Src/tim.c.obj
-                0x08000ba0                MX_TIM17_Init
+                0x08000ba8       0x5c CMakeFiles/sunBoard.dir/Core/Src/tim.c.obj
+                0x08000ba8                MX_TIM17_Init
  .text.HAL_TIM_Base_MspInit
-                0x08000bfc      0x13c CMakeFiles/sunBoard.dir/Core/Src/tim.c.obj
-                0x08000bfc                HAL_TIM_Base_MspInit
+                0x08000c04      0x13c CMakeFiles/sunBoard.dir/Core/Src/tim.c.obj
+                0x08000c04                HAL_TIM_Base_MspInit
  .text.HAL_TIM_PeriodElapsedCallback
-                0x08000d38       0xc0 CMakeFiles/sunBoard.dir/Core/Src/tim.c.obj
-                0x08000d38                HAL_TIM_PeriodElapsedCallback
+                0x08000d40       0xc0 CMakeFiles/sunBoard.dir/Core/Src/tim.c.obj
+                0x08000d40                HAL_TIM_PeriodElapsedCallback
  .text.MX_USART2_UART_Init
-                0x08000df8       0x68 CMakeFiles/sunBoard.dir/Core/Src/usart.c.obj
-                0x08000df8                MX_USART2_UART_Init
+                0x08000e00       0x68 CMakeFiles/sunBoard.dir/Core/Src/usart.c.obj
+                0x08000e00                MX_USART2_UART_Init
  .text.HAL_UART_MspInit
-                0x08000e60      0x150 CMakeFiles/sunBoard.dir/Core/Src/usart.c.obj
-                0x08000e60                HAL_UART_MspInit
+                0x08000e68      0x150 CMakeFiles/sunBoard.dir/Core/Src/usart.c.obj
+                0x08000e68                HAL_UART_MspInit
  .text.MyUart_send
-                0x08000fb0       0x32 CMakeFiles/sunBoard.dir/Core/Src/usart.c.obj
- *fill*         0x08000fe2        0x2 
+                0x08000fb8       0x32 CMakeFiles/sunBoard.dir/Core/Src/usart.c.obj
+ *fill*         0x08000fea        0x2 
  .text.MyUart_init
-                0x08000fe4       0x40 CMakeFiles/sunBoard.dir/Core/Src/usart.c.obj
-                0x08000fe4                MyUart_init
+                0x08000fec       0x40 CMakeFiles/sunBoard.dir/Core/Src/usart.c.obj
+                0x08000fec                MyUart_init
  .text.NMI_Handler
-                0x08001024        0x8 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
-                0x08001024                NMI_Handler
- .text.HardFault_Handler
                 0x0800102c        0x8 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
-                0x0800102c                HardFault_Handler
+                0x0800102c                NMI_Handler
+ .text.HardFault_Handler
+                0x08001034        0x8 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
+                0x08001034                HardFault_Handler
  .text.SVC_Handler
-                0x08001034        0xa CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
-                0x08001034                SVC_Handler
+                0x0800103c        0xa CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
+                0x0800103c                SVC_Handler
  .text.PendSV_Handler
-                0x0800103e        0xa CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
-                0x0800103e                PendSV_Handler
+                0x08001046        0xa CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
+                0x08001046                PendSV_Handler
  .text.SysTick_Handler
-                0x08001048        0xe CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
-                0x08001048                SysTick_Handler
- *fill*         0x08001056        0x2 
+                0x08001050        0xe CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
+                0x08001050                SysTick_Handler
+ *fill*         0x0800105e        0x2 
  .text.DMA1_Channel1_IRQHandler
-                0x08001058       0x18 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
-                0x08001058                DMA1_Channel1_IRQHandler
+                0x08001060       0x18 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
+                0x08001060                DMA1_Channel1_IRQHandler
  .text.DMA1_Channel2_3_IRQHandler
-                0x08001070       0x18 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
-                0x08001070                DMA1_Channel2_3_IRQHandler
+                0x08001078       0x18 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
+                0x08001078                DMA1_Channel2_3_IRQHandler
  .text.TIM1_BRK_UP_TRG_COM_IRQHandler
-                0x08001088       0x18 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
-                0x08001088                TIM1_BRK_UP_TRG_COM_IRQHandler
+                0x08001090       0x18 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
+                0x08001090                TIM1_BRK_UP_TRG_COM_IRQHandler
  .text.TIM3_IRQHandler
-                0x080010a0       0x18 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
-                0x080010a0                TIM3_IRQHandler
+                0x080010a8       0x18 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
+                0x080010a8                TIM3_IRQHandler
  .text.TIM14_IRQHandler
-                0x080010b8       0x18 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
-                0x080010b8                TIM14_IRQHandler
+                0x080010c0       0x18 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
+                0x080010c0                TIM14_IRQHandler
  .text.TIM16_IRQHandler
-                0x080010d0       0x18 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
-                0x080010d0                TIM16_IRQHandler
+                0x080010d8       0x18 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
+                0x080010d8                TIM16_IRQHandler
  .text.TIM17_IRQHandler
-                0x080010e8       0x18 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
-                0x080010e8                TIM17_IRQHandler
+                0x080010f0       0x18 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
+                0x080010f0                TIM17_IRQHandler
  .text.HAL_MspInit
-                0x08001100       0x48 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_hal_msp.c.obj
-                0x08001100                HAL_MspInit
+                0x08001108       0x48 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_hal_msp.c.obj
+                0x08001108                HAL_MspInit
  .text.HAL_I2C_Init
-                0x08001148      0x14c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
-                0x08001148                HAL_I2C_Init
+                0x08001150      0x14c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
+                0x08001150                HAL_I2C_Init
  .text.HAL_I2C_Master_Transmit
-                0x08001294      0x254 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
-                0x08001294                HAL_I2C_Master_Transmit
+                0x0800129c      0x254 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
+                0x0800129c                HAL_I2C_Master_Transmit
  .text.HAL_I2C_Mem_Write
-                0x080014e8      0x25c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
-                0x080014e8                HAL_I2C_Mem_Write
+                0x080014f0      0x25c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
+                0x080014f0                HAL_I2C_Mem_Write
  .text.HAL_I2C_Mem_Read
-                0x08001744      0x268 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
-                0x08001744                HAL_I2C_Mem_Read
+                0x0800174c      0x268 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
+                0x0800174c                HAL_I2C_Mem_Read
  .text.I2C_RequestMemoryWrite
-                0x080019ac       0xc8 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
+                0x080019b4       0xc8 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
  .text.I2C_RequestMemoryRead
-                0x08001a74       0xc4 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
+                0x08001a7c       0xc4 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
  .text.I2C_Flush_TXDR
-                0x08001b38       0x44 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
+                0x08001b40       0x44 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
  .text.I2C_WaitOnFlagUntilTimeout
-                0x08001b7c       0xb0 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
+                0x08001b84       0xb0 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
  .text.I2C_WaitOnTXISFlagUntilTimeout
-                0x08001c2c       0x8c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
+                0x08001c34       0x8c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
  .text.I2C_WaitOnSTOPFlagUntilTimeout
-                0x08001cb8       0x86 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
- *fill*         0x08001d3e        0x2 
+                0x08001cc0       0x86 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
+ *fill*         0x08001d46        0x2 
  .text.I2C_IsErrorOccurred
-                0x08001d40      0x1f0 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
+                0x08001d48      0x1f0 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
  .text.I2C_TransferConfig
-                0x08001f30       0x74 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
+                0x08001f38       0x74 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
  .text.HAL_I2CEx_ConfigAnalogFilter
-                0x08001fa4       0x98 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c_ex.c.obj
-                0x08001fa4                HAL_I2CEx_ConfigAnalogFilter
+                0x08001fac       0x98 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c_ex.c.obj
+                0x08001fac                HAL_I2CEx_ConfigAnalogFilter
  .text.HAL_I2CEx_ConfigDigitalFilter
-                0x0800203c       0x98 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c_ex.c.obj
-                0x0800203c                HAL_I2CEx_ConfigDigitalFilter
+                0x08002044       0x98 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c_ex.c.obj
+                0x08002044                HAL_I2CEx_ConfigDigitalFilter
  .text.LL_RCC_GetAPB1Prescaler
-                0x080020d4       0x18 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
+                0x080020dc       0x18 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
  .text.HAL_RCC_OscConfig
-                0x080020ec      0x620 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
-                0x080020ec                HAL_RCC_OscConfig
+                0x080020f4      0x620 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
+                0x080020f4                HAL_RCC_OscConfig
  .text.HAL_RCC_ClockConfig
-                0x0800270c      0x210 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
-                0x0800270c                HAL_RCC_ClockConfig
+                0x08002714      0x210 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
+                0x08002714                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x0800291c      0x104 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
-                0x0800291c                HAL_RCC_GetSysClockFreq
+                0x08002924      0x104 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
+                0x08002924                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_GetHCLKFreq
-                0x08002a20       0x14 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
-                0x08002a20                HAL_RCC_GetHCLKFreq
+                0x08002a28       0x14 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
+                0x08002a28                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x08002a34       0x2c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
-                0x08002a34                HAL_RCC_GetPCLK1Freq
+                0x08002a3c       0x2c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
+                0x08002a3c                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCCEx_PeriphCLKConfig
-                0x08002a60      0x24c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj
-                0x08002a60                HAL_RCCEx_PeriphCLKConfig
+                0x08002a68      0x24c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj
+                0x08002a68                HAL_RCCEx_PeriphCLKConfig
  .text.HAL_GPIO_Init
-                0x08002cac      0x2c8 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
-                0x08002cac                HAL_GPIO_Init
+                0x08002cb4      0x2c8 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
+                0x08002cb4                HAL_GPIO_Init
  .text.HAL_GPIO_ReadPin
-                0x08002f74       0x3a CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
-                0x08002f74                HAL_GPIO_ReadPin
+                0x08002f7c       0x3a CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
+                0x08002f7c                HAL_GPIO_ReadPin
  .text.HAL_GPIO_WritePin
-                0x08002fae       0x3a CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
-                0x08002fae                HAL_GPIO_WritePin
+                0x08002fb6       0x3a CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
+                0x08002fb6                HAL_GPIO_WritePin
  .text.HAL_DMA_Init
-                0x08002fe8      0x114 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
-                0x08002fe8                HAL_DMA_Init
+                0x08002ff0      0x114 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
+                0x08002ff0                HAL_DMA_Init
  .text.HAL_DMA_IRQHandler
-                0x080030fc      0x164 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
-                0x080030fc                HAL_DMA_IRQHandler
+                0x08003104      0x164 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
+                0x08003104                HAL_DMA_IRQHandler
  .text.DMA_CalcDMAMUXChannelBaseAndMask
-                0x08003260       0x58 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
+                0x08003268       0x58 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
  .text.DMA_CalcDMAMUXRequestGenBaseAndMask
-                0x080032b8       0x48 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
+                0x080032c0       0x48 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
  .text.HAL_PWREx_ControlVoltageScaling
-                0x08003300       0x80 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj
-                0x08003300                HAL_PWREx_ControlVoltageScaling
+                0x08003308       0x80 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj
+                0x08003308                HAL_PWREx_ControlVoltageScaling
  .text.__NVIC_EnableIRQ
-                0x08003380       0x34 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
+                0x08003388       0x34 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
  .text.__NVIC_SetPriority
-                0x080033b4       0xdc CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
+                0x080033bc       0xdc CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
  .text.__NVIC_SystemReset
-                0x08003490       0x24 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
+                0x08003498       0x24 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
  .text.SysTick_Config
-                0x080034b4       0x48 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
+                0x080034bc       0x48 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
  .text.HAL_NVIC_SetPriority
-                0x080034fc       0x2a CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
-                0x080034fc                HAL_NVIC_SetPriority
+                0x08003504       0x2a CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
+                0x08003504                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x08003526       0x20 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
-                0x08003526                HAL_NVIC_EnableIRQ
+                0x0800352e       0x20 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
+                0x0800352e                HAL_NVIC_EnableIRQ
  .text.HAL_NVIC_SystemReset
-                0x08003546        0x8 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
-                0x08003546                HAL_NVIC_SystemReset
+                0x0800354e        0x8 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
+                0x0800354e                HAL_NVIC_SystemReset
  .text.HAL_SYSTICK_Config
-                0x0800354e       0x1a CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
-                0x0800354e                HAL_SYSTICK_Config
+                0x08003556       0x1a CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
+                0x08003556                HAL_SYSTICK_Config
  .text.HAL_Init
-                0x08003568       0x40 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
-                0x08003568                HAL_Init
+                0x08003570       0x40 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
+                0x08003570                HAL_Init
  .text.HAL_InitTick
-                0x080035a8       0x94 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
-                0x080035a8                HAL_InitTick
+                0x080035b0       0x94 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
+                0x080035b0                HAL_InitTick
  .text.HAL_IncTick
-                0x0800363c       0x24 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
-                0x0800363c                HAL_IncTick
+                0x08003644       0x24 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
+                0x08003644                HAL_IncTick
  .text.HAL_GetTick
-                0x08003660       0x14 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
-                0x08003660                HAL_GetTick
+                0x08003668       0x14 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
+                0x08003668                HAL_GetTick
  .text.HAL_Delay
-                0x08003674       0x48 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
-                0x08003674                HAL_Delay
+                0x0800367c       0x48 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
+                0x0800367c                HAL_Delay
  .text.HAL_TIM_Base_Init
-                0x080036bc       0xb0 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x080036bc                HAL_TIM_Base_Init
+                0x080036c4       0xb0 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x080036c4                HAL_TIM_Base_Init
  .text.HAL_TIM_Base_Start_IT
-                0x0800376c       0x9c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x0800376c                HAL_TIM_Base_Start_IT
+                0x08003774       0x9c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08003774                HAL_TIM_Base_Start_IT
  .text.HAL_TIM_Base_Stop_IT
-                0x08003808       0x5c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08003808                HAL_TIM_Base_Stop_IT
+                0x08003810       0x5c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08003810                HAL_TIM_Base_Stop_IT
  .text.HAL_TIM_IRQHandler
-                0x08003864      0x210 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08003864                HAL_TIM_IRQHandler
+                0x0800386c      0x210 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x0800386c                HAL_TIM_IRQHandler
  .text.HAL_TIM_ConfigClockSource
-                0x08003a74      0x1ac CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08003a74                HAL_TIM_ConfigClockSource
+                0x08003a7c      0x1ac CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08003a7c                HAL_TIM_ConfigClockSource
  .text.HAL_TIM_OC_DelayElapsedCallback
-                0x08003c20       0x10 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08003c20                HAL_TIM_OC_DelayElapsedCallback
+                0x08003c28       0x10 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08003c28                HAL_TIM_OC_DelayElapsedCallback
  .text.HAL_TIM_IC_CaptureCallback
-                0x08003c30       0x10 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08003c30                HAL_TIM_IC_CaptureCallback
+                0x08003c38       0x10 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08003c38                HAL_TIM_IC_CaptureCallback
  .text.HAL_TIM_PWM_PulseFinishedCallback
-                0x08003c40       0x10 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08003c40                HAL_TIM_PWM_PulseFinishedCallback
+                0x08003c48       0x10 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08003c48                HAL_TIM_PWM_PulseFinishedCallback
  .text.HAL_TIM_TriggerCallback
-                0x08003c50       0x10 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08003c50                HAL_TIM_TriggerCallback
+                0x08003c58       0x10 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08003c58                HAL_TIM_TriggerCallback
  .text.TIM_Base_SetConfig
-                0x08003c60       0xf4 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08003c60                TIM_Base_SetConfig
+                0x08003c68       0xf4 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08003c68                TIM_Base_SetConfig
  .text.TIM_TI1_ConfigInputStage
-                0x08003d54       0x5c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08003d5c       0x5c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
  .text.TIM_TI2_ConfigInputStage
-                0x08003db0       0x64 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08003db8       0x64 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
  .text.TIM_ITRx_SetConfig
-                0x08003e14       0x38 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08003e1c       0x38 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
  .text.TIM_ETR_SetConfig
-                0x08003e4c       0x40 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
-                0x08003e4c                TIM_ETR_SetConfig
+                0x08003e54       0x40 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+                0x08003e54                TIM_ETR_SetConfig
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x08003e8c       0xc4 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
-                0x08003e8c                HAL_TIMEx_MasterConfigSynchronization
+                0x08003e94       0xc4 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
+                0x08003e94                HAL_TIMEx_MasterConfigSynchronization
  .text.HAL_TIMEx_CommutCallback
-                0x08003f50       0x10 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
-                0x08003f50                HAL_TIMEx_CommutCallback
+                0x08003f58       0x10 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
+                0x08003f58                HAL_TIMEx_CommutCallback
  .text.HAL_TIMEx_BreakCallback
-                0x08003f60       0x10 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
-                0x08003f60                HAL_TIMEx_BreakCallback
+                0x08003f68       0x10 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
+                0x08003f68                HAL_TIMEx_BreakCallback
  .text.HAL_TIMEx_Break2Callback
-                0x08003f70       0x10 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
-                0x08003f70                HAL_TIMEx_Break2Callback
+                0x08003f78       0x10 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
+                0x08003f78                HAL_TIMEx_Break2Callback
  .text.HAL_UART_Init
-                0x08003f80       0xac CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj
-                0x08003f80                HAL_UART_Init
+                0x08003f88       0xac CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj
+                0x08003f88                HAL_UART_Init
  .text.HAL_UART_Transmit
-                0x0800402c      0x148 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj
-                0x0800402c                HAL_UART_Transmit
+                0x08004034      0x148 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj
+                0x08004034                HAL_UART_Transmit
  .text.UART_SetConfig
-                0x08004174      0x2d4 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj
-                0x08004174                UART_SetConfig
+                0x0800417c      0x2d4 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj
+                0x0800417c                UART_SetConfig
  .text.UART_AdvFeatureConfig
-                0x08004448      0x168 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj
-                0x08004448                UART_AdvFeatureConfig
+                0x08004450      0x168 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj
+                0x08004450                UART_AdvFeatureConfig
  .text.UART_CheckIdleState
-                0x080045b0      0x154 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj
-                0x080045b0                UART_CheckIdleState
+                0x080045b8      0x154 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj
+                0x080045b8                UART_CheckIdleState
  .text.UART_WaitOnFlagUntilTimeout
-                0x08004704       0xde CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj
-                0x08004704                UART_WaitOnFlagUntilTimeout
- *fill*         0x080047e2        0x2 
+                0x0800470c       0xde CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj
+                0x0800470c                UART_WaitOnFlagUntilTimeout
+ *fill*         0x080047ea        0x2 
  .text.UART_EndRxTransfer
-                0x080047e4       0xcc CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj
+                0x080047ec       0xcc CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj
  .text.SystemInit
-                0x080048b0        0xa CMakeFiles/sunBoard.dir/Core/Src/system_stm32g0xx.c.obj
-                0x080048b0                SystemInit
- *fill*         0x080048ba        0x2 
- .text._sbrk    0x080048bc       0x6c CMakeFiles/sunBoard.dir/Core/Src/sysmem.c.obj
-                0x080048bc                _sbrk
+                0x080048b8        0xa CMakeFiles/sunBoard.dir/Core/Src/system_stm32g0xx.c.obj
+                0x080048b8                SystemInit
+ *fill*         0x080048c2        0x2 
+ .text._sbrk    0x080048c4       0x6c CMakeFiles/sunBoard.dir/Core/Src/sysmem.c.obj
+                0x080048c4                _sbrk
  .text.Reset_Handler
-                0x08004928       0x50 CMakeFiles/sunBoard.dir/startup_stm32g030xx.s.obj
-                0x08004928                Reset_Handler
+                0x08004930       0x50 CMakeFiles/sunBoard.dir/startup_stm32g030xx.s.obj
+                0x08004930                Reset_Handler
  .text.Default_Handler
-                0x08004978        0x2 CMakeFiles/sunBoard.dir/startup_stm32g030xx.s.obj
-                0x08004978                TIM1_CC_IRQHandler
-                0x08004978                I2C1_IRQHandler
-                0x08004978                RTC_TAMP_IRQHandler
-                0x08004978                SPI1_IRQHandler
-                0x08004978                DMA1_Ch4_5_DMAMUX1_OVR_IRQHandler
-                0x08004978                EXTI2_3_IRQHandler
-                0x08004978                ADC1_IRQHandler
-                0x08004978                I2C2_IRQHandler
-                0x08004978                EXTI4_15_IRQHandler
-                0x08004978                RCC_IRQHandler
-                0x08004978                Default_Handler
-                0x08004978                EXTI0_1_IRQHandler
-                0x08004978                SPI2_IRQHandler
-                0x08004978                WWDG_IRQHandler
-                0x08004978                USART2_IRQHandler
-                0x08004978                FLASH_IRQHandler
-                0x08004978                USART1_IRQHandler
+                0x08004980        0x2 CMakeFiles/sunBoard.dir/startup_stm32g030xx.s.obj
+                0x08004980                TIM1_CC_IRQHandler
+                0x08004980                I2C1_IRQHandler
+                0x08004980                RTC_TAMP_IRQHandler
+                0x08004980                SPI1_IRQHandler
+                0x08004980                DMA1_Ch4_5_DMAMUX1_OVR_IRQHandler
+                0x08004980                EXTI2_3_IRQHandler
+                0x08004980                ADC1_IRQHandler
+                0x08004980                I2C2_IRQHandler
+                0x08004980                EXTI4_15_IRQHandler
+                0x08004980                RCC_IRQHandler
+                0x08004980                Default_Handler
+                0x08004980                EXTI0_1_IRQHandler
+                0x08004980                SPI2_IRQHandler
+                0x08004980                WWDG_IRQHandler
+                0x08004980                USART2_IRQHandler
+                0x08004980                FLASH_IRQHandler
+                0x08004980                USART1_IRQHandler
  .text.BCD_To_Dec
-                0x0800497a       0x3a CMakeFiles/sunBoard.dir/User/src/PCF8563.c.obj
+                0x08004982       0x3a CMakeFiles/sunBoard.dir/User/src/PCF8563.c.obj
  .text.Dec_To_BCD
-                0x080049b4       0x3c CMakeFiles/sunBoard.dir/User/src/PCF8563.c.obj
+                0x080049bc       0x3c CMakeFiles/sunBoard.dir/User/src/PCF8563.c.obj
  .text.PCF8563_Write
-                0x080049f0       0x58 CMakeFiles/sunBoard.dir/User/src/PCF8563.c.obj
+                0x080049f8       0x58 CMakeFiles/sunBoard.dir/User/src/PCF8563.c.obj
  .text.PCF8563_set_time
-                0x08004a48       0xec CMakeFiles/sunBoard.dir/User/src/PCF8563.c.obj
-                0x08004a48                PCF8563_set_time
+                0x08004a50       0xec CMakeFiles/sunBoard.dir/User/src/PCF8563.c.obj
+                0x08004a50                PCF8563_set_time
  .text.PCF8563_read_time
-                0x08004b34       0x3c CMakeFiles/sunBoard.dir/User/src/PCF8563.c.obj
+                0x08004b3c       0x3c CMakeFiles/sunBoard.dir/User/src/PCF8563.c.obj
  .text.time_updata
-                0x08004b70      0x17c CMakeFiles/sunBoard.dir/User/src/PCF8563.c.obj
+                0x08004b78      0x17c CMakeFiles/sunBoard.dir/User/src/PCF8563.c.obj
  .text.PCF8563_init
-                0x08004cec       0xe4 CMakeFiles/sunBoard.dir/User/src/PCF8563.c.obj
+                0x08004cf4       0xe4 CMakeFiles/sunBoard.dir/User/src/PCF8563.c.obj
  .text.newPCF8563
-                0x08004dd0       0x2a CMakeFiles/sunBoard.dir/User/src/PCF8563.c.obj
-                0x08004dd0                newPCF8563
- *fill*         0x08004dfa        0x2 
+                0x08004dd8       0x2a CMakeFiles/sunBoard.dir/User/src/PCF8563.c.obj
+                0x08004dd8                newPCF8563
+ *fill*         0x08004e02        0x2 
  .text.TM1650_write_param
-                0x08004dfc       0x3c CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
+                0x08004e04       0x3c CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
  .text.TM1650_display_pos
-                0x08004e38       0x4c CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
-                0x08004e38                TM1650_display_pos
+                0x08004e40       0x4c CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
+                0x08004e40                TM1650_display_pos
  .text.TM1650_clear
-                0x08004e84       0x88 CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
-                0x08004e84                TM1650_clear
+                0x08004e8c       0x88 CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
+                0x08004e8c                TM1650_clear
  .text.displayOnOff
-                0x08004f0c       0x7c CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
+                0x08004f14       0x7c CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
  .text.cursorOnOff
-                0x08004f88       0x66 CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
+                0x08004f90       0x66 CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
  .text.cursorMove
-                0x08004fee       0x8c CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
- *fill*         0x0800507a        0x2 
+                0x08004ff6       0x8c CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
+ *fill*         0x08005082        0x2 
  .text.writeCursor
-                0x0800507c       0x8c CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
+                0x08005084       0x8c CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
  .text.cursor_value_set
-                0x08005108      0x154 CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
+                0x08005110      0x154 CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
  .text.TM1650_show_time
-                0x0800525c       0xe2 CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
+                0x08005264       0xe2 CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
  .text.cursor_flash_ctrl
-                0x0800533e       0x56 CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
-                0x0800533e                cursor_flash_ctrl
+                0x08005346       0x56 CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
+                0x08005346                cursor_flash_ctrl
  .text.TM1650_init
-                0x08005394      0x114 CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
+                0x0800539c      0x114 CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
  .text.newTM1650
-                0x080054a8       0x36 CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
-                0x080054a8                newTM1650
+                0x080054b0       0x36 CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
+                0x080054b0                newTM1650
  .text.keyRespnse
-                0x080054de       0x64 CMakeFiles/sunBoard.dir/User/src/key.c.obj
- *fill*         0x08005542        0x2 
+                0x080054e6       0x64 CMakeFiles/sunBoard.dir/User/src/key.c.obj
+ *fill*         0x0800554a        0x2 
  .text.singleClickedCallback
-                0x08005544       0xd8 CMakeFiles/sunBoard.dir/User/src/key.c.obj
+                0x0800554c       0xd8 CMakeFiles/sunBoard.dir/User/src/key.c.obj
  .text.longPressCallback
-                0x0800561c      0x224 CMakeFiles/sunBoard.dir/User/src/key.c.obj
+                0x08005624      0x224 CMakeFiles/sunBoard.dir/User/src/key.c.obj
  .text.doubleClickCallback
-                0x08005840       0x98 CMakeFiles/sunBoard.dir/User/src/key.c.obj
+                0x08005848       0x98 CMakeFiles/sunBoard.dir/User/src/key.c.obj
  .text.longlongPressCallback
-                0x080058d8       0x9c CMakeFiles/sunBoard.dir/User/src/key.c.obj
+                0x080058e0       0x9c CMakeFiles/sunBoard.dir/User/src/key.c.obj
  .text.keystatus
-                0x08005974       0x5c CMakeFiles/sunBoard.dir/User/src/key.c.obj
-                0x08005974                keystatus
+                0x0800597c       0x5c CMakeFiles/sunBoard.dir/User/src/key.c.obj
+                0x0800597c                keystatus
  .text.keyActionScan
-                0x080059d0      0x108 CMakeFiles/sunBoard.dir/User/src/key.c.obj
-                0x080059d0                keyActionScan
+                0x080059d8      0x108 CMakeFiles/sunBoard.dir/User/src/key.c.obj
+                0x080059d8                keyActionScan
  .text.keyDoubleClickCheck
-                0x08005ad8       0x2a CMakeFiles/sunBoard.dir/User/src/key.c.obj
-                0x08005ad8                keyDoubleClickCheck
- *fill*         0x08005b02        0x2 
- .text.keyInit  0x08005b04       0x74 CMakeFiles/sunBoard.dir/User/src/key.c.obj
- .text.newKey   0x08005b78       0x38 CMakeFiles/sunBoard.dir/User/src/key.c.obj
-                0x08005b78                newKey
+                0x08005ae0       0x2a CMakeFiles/sunBoard.dir/User/src/key.c.obj
+                0x08005ae0                keyDoubleClickCheck
+ *fill*         0x08005b0a        0x2 
+ .text.keyInit  0x08005b0c       0x74 CMakeFiles/sunBoard.dir/User/src/key.c.obj
+ .text.newKey   0x08005b80       0x38 CMakeFiles/sunBoard.dir/User/src/key.c.obj
+                0x08005b80                newKey
  .text.set_current_angle
-                0x08005bb0       0x3e CMakeFiles/sunBoard.dir/User/src/motor.c.obj
+                0x08005bb8       0x3e CMakeFiles/sunBoard.dir/User/src/motor.c.obj
  .text.set_target_angle
-                0x08005bee       0x4e CMakeFiles/sunBoard.dir/User/src/motor.c.obj
+                0x08005bf6       0x4e CMakeFiles/sunBoard.dir/User/src/motor.c.obj
  .text.set_total_angle
-                0x08005c3c       0x2e CMakeFiles/sunBoard.dir/User/src/motor.c.obj
+                0x08005c44       0x2e CMakeFiles/sunBoard.dir/User/src/motor.c.obj
  .text.get_current_angle
-                0x08005c6a       0x34 CMakeFiles/sunBoard.dir/User/src/motor.c.obj
+                0x08005c72       0x34 CMakeFiles/sunBoard.dir/User/src/motor.c.obj
  .text.motor_left_correct
-                0x08005c9e       0x3c CMakeFiles/sunBoard.dir/User/src/motor.c.obj
+                0x08005ca6       0x3c CMakeFiles/sunBoard.dir/User/src/motor.c.obj
  .text.motor_right_correct
-                0x08005cda       0x3c CMakeFiles/sunBoard.dir/User/src/motor.c.obj
+                0x08005ce2       0x3c CMakeFiles/sunBoard.dir/User/src/motor.c.obj
  .text.motor_stop
-                0x08005d16       0x36 CMakeFiles/sunBoard.dir/User/src/motor.c.obj
+                0x08005d1e       0x36 CMakeFiles/sunBoard.dir/User/src/motor.c.obj
  .text.motor_reset
-                0x08005d4c       0x48 CMakeFiles/sunBoard.dir/User/src/motor.c.obj
+                0x08005d54       0x48 CMakeFiles/sunBoard.dir/User/src/motor.c.obj
  .text.motor_status_led_ctrl
-                0x08005d94       0x2c CMakeFiles/sunBoard.dir/User/src/motor.c.obj
+                0x08005d9c       0x2c CMakeFiles/sunBoard.dir/User/src/motor.c.obj
  .text.motor_wave_control
-                0x08005dc0      0x4f8 CMakeFiles/sunBoard.dir/User/src/motor.c.obj
+                0x08005dc8      0x4f8 CMakeFiles/sunBoard.dir/User/src/motor.c.obj
  .text.Motor_Ctrl_init
-                0x080062b8       0xec CMakeFiles/sunBoard.dir/User/src/motor.c.obj
+                0x080062c0       0xec CMakeFiles/sunBoard.dir/User/src/motor.c.obj
  .text.newMotorCtrl
-                0x080063a4       0x2a CMakeFiles/sunBoard.dir/User/src/motor.c.obj
-                0x080063a4                newMotorCtrl
- *fill*         0x080063ce        0x2 
- .text.malloc   0x080063d0       0x14 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(libc_a-malloc.o)
-                0x080063d0                malloc
- .text.__errno  0x080063e4        0xc I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(libc_a-errno.o)
-                0x080063e4                __errno
+                0x080063ac       0x2a CMakeFiles/sunBoard.dir/User/src/motor.c.obj
+                0x080063ac                newMotorCtrl
+ *fill*         0x080063d6        0x2 
+ .text.malloc   0x080063d8       0x14 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(libc_a-malloc.o)
+                0x080063d8                malloc
+ .text.__errno  0x080063ec        0xc I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(libc_a-errno.o)
+                0x080063ec                __errno
  *(.glue_7)
- .glue_7        0x080063f0        0x0 linker stubs
+ .glue_7        0x080063f8        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x080063f0        0x0 linker stubs
+ .glue_7t       0x080063f8        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x080063f0        0x0 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
+ .eh_frame      0x080063f8        0x0 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
  *(.init)
- .init          0x080063f0        0x4 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crti.o
-                0x080063f0                _init
- .init          0x080063f4        0x8 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtn.o
+ .init          0x080063f8        0x4 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crti.o
+                0x080063f8                _init
+ .init          0x080063fc        0x8 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtn.o
  *(.fini)
- .fini          0x080063fc        0x4 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crti.o
-                0x080063fc                _fini
- .fini          0x08006400        0x8 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtn.o
-                0x08006408                        . = ALIGN (0x4)
-                0x08006408                        _etext = .
+ .fini          0x08006404        0x4 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crti.o
+                0x08006404                _fini
+ .fini          0x08006408        0x8 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtn.o
+                0x08006410                        . = ALIGN (0x4)
+                0x08006410                        _etext = .
 
-.vfp11_veneer   0x08006408        0x0
- .vfp11_veneer  0x08006408        0x0 linker stubs
+.vfp11_veneer   0x08006410        0x0
+ .vfp11_veneer  0x08006410        0x0 linker stubs
 
-.v4_bx          0x08006408        0x0
- .v4_bx         0x08006408        0x0 linker stubs
+.v4_bx          0x08006410        0x0
+ .v4_bx         0x08006410        0x0 linker stubs
 
-.iplt           0x08006408        0x0
- .iplt          0x08006408        0x0 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x08006410        0x0
+ .iplt          0x08006410        0x0 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x08006408       0xb8
-                0x08006408                        . = ALIGN (0x4)
+.rodata         0x08006410       0xb8
+                0x08006410                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.UARTPrescTable
-                0x08006408       0x18 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj
-                0x08006408                UARTPrescTable
+                0x08006410       0x18 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj
+                0x08006410                UARTPrescTable
  .rodata.AHBPrescTable
-                0x08006420       0x40 CMakeFiles/sunBoard.dir/Core/Src/system_stm32g0xx.c.obj
-                0x08006420                AHBPrescTable
+                0x08006428       0x40 CMakeFiles/sunBoard.dir/Core/Src/system_stm32g0xx.c.obj
+                0x08006428                AHBPrescTable
  .rodata.APBPrescTable
-                0x08006460       0x20 CMakeFiles/sunBoard.dir/Core/Src/system_stm32g0xx.c.obj
-                0x08006460                APBPrescTable
+                0x08006468       0x20 CMakeFiles/sunBoard.dir/Core/Src/system_stm32g0xx.c.obj
+                0x08006468                APBPrescTable
  .rodata.motor_wave_control
-                0x08006480       0x40 CMakeFiles/sunBoard.dir/User/src/motor.c.obj
-                0x080064c0                        . = ALIGN (0x4)
+                0x08006488       0x40 CMakeFiles/sunBoard.dir/User/src/motor.c.obj
+                0x080064c8                        . = ALIGN (0x4)
 
-.rel.dyn        0x080064c0        0x0
- .rel.iplt      0x080064c0        0x0 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x080064c8        0x0
+ .rel.iplt      0x080064c8        0x0 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x080064c0        0x0
-                0x080064c0                        __exidx_start = .
+.ARM            0x080064c8        0x0
+                0x080064c8                        __exidx_start = .
  *(.ARM.exidx*)
-                0x080064c0                        __exidx_end = .
+                0x080064c8                        __exidx_end = .
 
-.preinit_array  0x080064c0        0x0
-                0x080064c0                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x080064c8        0x0
+                0x080064c8                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x080064c0                        PROVIDE (__preinit_array_end = .)
+                0x080064c8                        PROVIDE (__preinit_array_end = .)
 
-.init_array     0x080064c0        0x4
-                0x080064c0                        PROVIDE (__init_array_start = .)
+.init_array     0x080064c8        0x4
+                0x080064c8                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x080064c0        0x4 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x080064c4                        PROVIDE (__init_array_end = .)
+ .init_array    0x080064c8        0x4 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x080064cc                        PROVIDE (__init_array_end = .)
 
-.fini_array     0x080064c4        0x4
+.fini_array     0x080064cc        0x4
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x080064c4        0x4 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
+ .fini_array    0x080064cc        0x4 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x080064c8                        _sidata = LOADADDR (.data)
+                0x080064d0                        _sidata = LOADADDR (.data)
 
-.data           0x20000000       0x68 load address 0x080064c8
+.data           0x20000000       0x68 load address 0x080064d0
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -5708,11 +5708,11 @@ LOAD I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-
  *fill*         0x20000066        0x2 
                 0x20000068                        _edata = .
 
-.igot.plt       0x20000068        0x0 load address 0x08006530
+.igot.plt       0x20000068        0x0 load address 0x08006538
  .igot.plt      0x20000068        0x0 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp/crtbegin.o
                 0x20000068                        . = ALIGN (0x4)
 
-.bss            0x20000068      0x57c load address 0x08006530
+.bss            0x20000068      0x57c load address 0x08006538
                 0x20000068                        _sbss = .
                 0x20000068                        __bss_start__ = _sbss
  *(.bss)
@@ -5793,7 +5793,7 @@ LOAD I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-
                 0x200005e4                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200005e4      0x604 load address 0x08006530
+                0x200005e4      0x604 load address 0x08006538
                 0x200005e8                        . = ALIGN (0x8)
  *fill*         0x200005e4        0x4 
                 [!provide]                        PROVIDE (end = .)
@@ -6233,36 +6233,36 @@ LOAD I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-
  .debug_macro   0x000183cd       0x4c CMakeFiles/sunBoard.dir/User/src/key.c.obj
  .debug_macro   0x00018419      0x3ad CMakeFiles/sunBoard.dir/User/src/motor.c.obj
 
-.debug_line     0x00000000    0x1a8cb
- .debug_line    0x00000000      0x9ce CMakeFiles/sunBoard.dir/Core/Src/main.c.obj
- .debug_line    0x000009ce      0x81a CMakeFiles/sunBoard.dir/Core/Src/gpio.c.obj
- .debug_line    0x000011e8      0x7f6 CMakeFiles/sunBoard.dir/Core/Src/dma.c.obj
- .debug_line    0x000019de      0x908 CMakeFiles/sunBoard.dir/Core/Src/i2c.c.obj
- .debug_line    0x000022e6      0xad3 CMakeFiles/sunBoard.dir/Core/Src/tim.c.obj
- .debug_line    0x00002db9      0x926 CMakeFiles/sunBoard.dir/Core/Src/usart.c.obj
- .debug_line    0x000036df      0x905 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
- .debug_line    0x00003fe4      0x7f9 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_hal_msp.c.obj
- .debug_line    0x000047dd     0x3a29 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
- .debug_line    0x00008206      0x95c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c_ex.c.obj
- .debug_line    0x00008b62      0xefa CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
- .debug_line    0x00009a5c      0xabe CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj
- .debug_line    0x0000a51a      0xb70 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
- .debug_line    0x0000b08a      0xd8e CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
- .debug_line    0x0000be18      0x982 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj
- .debug_line    0x0000c79a      0xb8c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
- .debug_line    0x0000d326      0xa6c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
- .debug_line    0x0000dd92     0x3bb9 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
- .debug_line    0x0001194b     0x1be0 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
- .debug_line    0x0001352b     0x34b1 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj
- .debug_line    0x000169dc      0x7b1 CMakeFiles/sunBoard.dir/Core/Src/system_stm32g0xx.c.obj
- .debug_line    0x0001718d      0x359 CMakeFiles/sunBoard.dir/Core/Src/sysmem.c.obj
- .debug_line    0x000174e6       0x7b CMakeFiles/sunBoard.dir/startup_stm32g030xx.s.obj
- .debug_line    0x00017561      0xb57 CMakeFiles/sunBoard.dir/User/src/PCF8563.c.obj
- .debug_line    0x000180b8      0xc5c CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
- .debug_line    0x00018d14      0xccd CMakeFiles/sunBoard.dir/User/src/key.c.obj
- .debug_line    0x000199e1      0xb4c CMakeFiles/sunBoard.dir/User/src/motor.c.obj
- .debug_line    0x0001a52d      0x210 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(libc_a-malloc.o)
- .debug_line    0x0001a73d      0x18e I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(libc_a-errno.o)
+.debug_line     0x00000000    0x1a8d0
+ .debug_line    0x00000000      0x9d0 CMakeFiles/sunBoard.dir/Core/Src/main.c.obj
+ .debug_line    0x000009d0      0x81a CMakeFiles/sunBoard.dir/Core/Src/gpio.c.obj
+ .debug_line    0x000011ea      0x7f6 CMakeFiles/sunBoard.dir/Core/Src/dma.c.obj
+ .debug_line    0x000019e0      0x908 CMakeFiles/sunBoard.dir/Core/Src/i2c.c.obj
+ .debug_line    0x000022e8      0xad6 CMakeFiles/sunBoard.dir/Core/Src/tim.c.obj
+ .debug_line    0x00002dbe      0x926 CMakeFiles/sunBoard.dir/Core/Src/usart.c.obj
+ .debug_line    0x000036e4      0x905 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj
+ .debug_line    0x00003fe9      0x7f9 CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_hal_msp.c.obj
+ .debug_line    0x000047e2     0x3a29 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj
+ .debug_line    0x0000820b      0x95c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c_ex.c.obj
+ .debug_line    0x00008b67      0xefa CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
+ .debug_line    0x00009a61      0xabe CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj
+ .debug_line    0x0000a51f      0xb70 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj
+ .debug_line    0x0000b08f      0xd8e CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj
+ .debug_line    0x0000be1d      0x982 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj
+ .debug_line    0x0000c79f      0xb8c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj
+ .debug_line    0x0000d32b      0xa6c CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj
+ .debug_line    0x0000dd97     0x3bb9 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj
+ .debug_line    0x00011950     0x1be0 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
+ .debug_line    0x00013530     0x34b1 CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj
+ .debug_line    0x000169e1      0x7b1 CMakeFiles/sunBoard.dir/Core/Src/system_stm32g0xx.c.obj
+ .debug_line    0x00017192      0x359 CMakeFiles/sunBoard.dir/Core/Src/sysmem.c.obj
+ .debug_line    0x000174eb       0x7b CMakeFiles/sunBoard.dir/startup_stm32g030xx.s.obj
+ .debug_line    0x00017566      0xb57 CMakeFiles/sunBoard.dir/User/src/PCF8563.c.obj
+ .debug_line    0x000180bd      0xc5c CMakeFiles/sunBoard.dir/User/src/TM1650.c.obj
+ .debug_line    0x00018d19      0xccd CMakeFiles/sunBoard.dir/User/src/key.c.obj
+ .debug_line    0x000199e6      0xb4c CMakeFiles/sunBoard.dir/User/src/motor.c.obj
+ .debug_line    0x0001a532      0x210 I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(libc_a-malloc.o)
+ .debug_line    0x0001a742      0x18e I:/cubeclt/cube/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(libc_a-errno.o)
 
 .debug_str      0x00000000    0x8e2b1
  .debug_str     0x00000000    0x88a93 CMakeFiles/sunBoard.dir/Core/Src/main.c.obj

@@ -80,13 +80,6 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-  key0 = newKey(0);
-  key1 = newKey(1);
-  key2 = newKey(2);
-
-  TM1650 = newTM1650(TM1650_BRIGHT2);
-  Pcf8563_ctrl = newPCF8563();
-  Motor_Ctrl = newMotorCtrl();
 
   /* USER CODE END 1 */
 
@@ -119,6 +112,13 @@ int main(void)
   MX_TIM17_Init();
   /* USER CODE BEGIN 2 */
   MyUart_init(&myuart);
+  key0 = newKey(0);
+  key1 = newKey(1);
+  key2 = newKey(2);
+
+  TM1650 = newTM1650(TM1650_BRIGHT2);
+  Pcf8563_ctrl = newPCF8563();
+  Motor_Ctrl = newMotorCtrl();
 
   /* USER CODE END 2 */
 
@@ -134,7 +134,7 @@ int main(void)
     if (Pcf8563_ctrl->timeFlash == TIME_OK)
     {
       Pcf8563_ctrl->timeFlash = TIME_WAIT;
-      HAL_StatusTypeDef status = Pcf8563_ctrl->time_updata(&Pcf8563_ctrl);
+      HAL_StatusTypeDef status = Pcf8563_ctrl->time_updata(Pcf8563_ctrl);
       if (HAL_OK == status)
       {
         TM1650->TM1650_show_time(TM1650, Pcf8563_ctrl->data_time->Hour, Pcf8563_ctrl->data_time->Min);
@@ -169,9 +169,9 @@ int main(void)
     key2->response(key2);
   }
 
-  deletePCF8563(Pcf8563_ctrl);
+/*   deletePCF8563(Pcf8563_ctrl);
   delete_MotorCtrl(Motor_Ctrl);
-  deleteTM1650(TM1650);
+  deleteTM1650(TM1650); */
   /* USER CODE END 3 */
 }
 
