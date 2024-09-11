@@ -5,7 +5,7 @@ static void set_current_angle(void *pointer, uint16_t angle)
 {
 
     Motor_Controller *p = pointer;
-    if (angle >= 0 && angle <= 360)
+    if (angle <= 360)
     {
         p->Current_Angle = (uint32_t)angle * 4096 / 360;
     }
@@ -15,7 +15,7 @@ static void set_target_angle(void *pointer, uint16_t angle)
 {
 
     Motor_Controller *p = pointer;
-    if (angle >= 0 && angle <= 360)
+    if (angle <= 360)
     {
         p->Target_Angle = (uint32_t)angle * 4096 / 360;
         p->motor_status = MOTOR_BUSY;
@@ -27,7 +27,7 @@ static void set_total_angle(void *pointer, uint16_t angle)
 {
 
     Motor_Controller *p = pointer;
-    if (angle >= 0 && angle <= 360)
+    if (angle <= 360)
     {
         p->total_angle = angle;
     }
@@ -40,12 +40,14 @@ static uint16_t get_current_angle(void *pointer)
     return angle;
 }
 
-static uint16_t get_target_angle(void *pointer)
+
+/* static uint16_t get_target_angle(void *pointer)
 {
     Motor_Controller *p = pointer;
+    p = p;
     uint16_t angle = (uint32_t)p->Target_Angle * 360 / 4096;
     return angle;
-}
+} */
 
 static void motor_left_correct(void *pointer, uint8_t angle_step)
 {
@@ -109,6 +111,7 @@ static void motor_reset(void *pointer)
 static void motor_status_led_ctrl(void *pointer, GPIO_PinState state)
 {
     Motor_Controller *p = pointer;
+    p = p;
     HAL_GPIO_WritePin(MotorLed_GPIO_Port, MotorLed_Pin, state);
 }
 
