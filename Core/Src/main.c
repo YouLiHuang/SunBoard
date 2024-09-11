@@ -155,11 +155,11 @@ int main(void)
       Pcf8563_ctrl->timehourFlash = HOUR_IDEAL;
       if (Pcf8563_ctrl->data_time->Hour < 18 && Pcf8563_ctrl->data_time->Hour > 9) // 白天转动
       {
-        Motor_Ctrl->motor_right_correct(&Motor_Ctrl, ANGLE_PER_HOUR);
+        Motor_Ctrl->motor_right_correct(Motor_Ctrl, ANGLE_PER_HOUR);
       }
       else if (Pcf8563_ctrl->data_time->Hour == 18) // 18：00复位
       {
-        Motor_Ctrl->motor_reset(&Motor_Ctrl);
+        Motor_Ctrl->motor_reset(Motor_Ctrl);
       }
     }
 
