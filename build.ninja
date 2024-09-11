@@ -56,8 +56,46 @@ build CMakeFiles/sunBoard.dir/Core/Src/main.c.obj: C_COMPILER__sunBoard_unscanne
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
+
+build CMakeFiles/sunBoard.dir/Core/Src/key.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Core/Src/key.c || cmake_object_order_depends_target_sunBoard
+  DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\sunBoard.dir\Core\Src\key.c.obj.d
+  FLAGS = -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
+  INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\sunBoard.dir
+  OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Core\Src
+
+build CMakeFiles/sunBoard.dir/Core/Src/PCF8563.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Core/Src/PCF8563.c || cmake_object_order_depends_target_sunBoard
+  DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\sunBoard.dir\Core\Src\PCF8563.c.obj.d
+  FLAGS = -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
+  INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\sunBoard.dir
+  OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Core\Src
+
+build CMakeFiles/sunBoard.dir/Core/Src/motor.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Core/Src/motor.c || cmake_object_order_depends_target_sunBoard
+  DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\sunBoard.dir\Core\Src\motor.c.obj.d
+  FLAGS = -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
+  INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\sunBoard.dir
+  OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Core\Src
+
+build CMakeFiles/sunBoard.dir/Core/Src/TM1650.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Core/Src/TM1650.c || cmake_object_order_depends_target_sunBoard
+  DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\sunBoard.dir\Core\Src\TM1650.c.obj.d
+  FLAGS = -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
+  INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\sunBoard.dir
+  OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Core\Src
+
+build CMakeFiles/sunBoard.dir/Core/Src/myFlash.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Core/Src/myFlash.c || cmake_object_order_depends_target_sunBoard
+  DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\sunBoard.dir\Core\Src\myFlash.c.obj.d
+  FLAGS = -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
+  INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\sunBoard.dir
+  OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Core\Src
 
 build CMakeFiles/sunBoard.dir/Core/Src/gpio.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Core/Src/gpio.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -66,8 +104,14 @@ build CMakeFiles/sunBoard.dir/Core/Src/gpio.c.obj: C_COMPILER__sunBoard_unscanne
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
+
+build CMakeFiles/sunBoard.dir/Core/Src/dma.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Core/Src/dma.c || cmake_object_order_depends_target_sunBoard
+  DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\sunBoard.dir\Core\Src\dma.c.obj.d
+  FLAGS = -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
+  INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\sunBoard.dir
+  OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Core\Src
 
 build CMakeFiles/sunBoard.dir/Core/Src/i2c.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Core/Src/i2c.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -76,8 +120,14 @@ build CMakeFiles/sunBoard.dir/Core/Src/i2c.c.obj: C_COMPILER__sunBoard_unscanned
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
+
+build CMakeFiles/sunBoard.dir/Core/Src/tim.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Core/Src/tim.c || cmake_object_order_depends_target_sunBoard
+  DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\sunBoard.dir\Core\Src\tim.c.obj.d
+  FLAGS = -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
+  INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\sunBoard.dir
+  OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Core\Src
 
 build CMakeFiles/sunBoard.dir/Core/Src/usart.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Core/Src/usart.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -86,8 +136,6 @@ build CMakeFiles/sunBoard.dir/Core/Src/usart.c.obj: C_COMPILER__sunBoard_unscann
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Core/Src/stm32g0xx_it.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -96,8 +144,6 @@ build CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj: C_COMPILER__sunBoard_
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_hal_msp.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Core/Src/stm32g0xx_hal_msp.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -106,8 +152,6 @@ build CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_hal_msp.c.obj: C_COMPILER__sunB
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -116,8 +160,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c_ex.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c_ex.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -126,8 +168,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -136,8 +176,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -146,8 +184,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -156,8 +192,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -166,8 +200,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fla
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -176,8 +208,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fla
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -186,8 +216,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpi
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -196,8 +224,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -206,8 +232,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -216,8 +240,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -226,8 +248,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -236,8 +256,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cor
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -246,8 +264,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.o
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -256,8 +272,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_ext
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -266,8 +280,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -276,8 +288,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -286,8 +296,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uar
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -296,8 +304,6 @@ build CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uar
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Drivers\STM32G0xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Core/Src/system_stm32g0xx.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Core/Src/system_stm32g0xx.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -306,8 +312,6 @@ build CMakeFiles/sunBoard.dir/Core/Src/system_stm32g0xx.c.obj: C_COMPILER__sunBo
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Core/Src/sysmem.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Core/Src/sysmem.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -316,8 +320,6 @@ build CMakeFiles/sunBoard.dir/Core/Src/sysmem.c.obj: C_COMPILER__sunBoard_unscan
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/Core/Src/syscalls.c.obj: C_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/Core/Src/syscalls.c || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -326,8 +328,6 @@ build CMakeFiles/sunBoard.dir/Core/Src/syscalls.c.obj: C_COMPILER__sunBoard_unsc
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 build CMakeFiles/sunBoard.dir/startup_stm32g030xx.s.obj: ASM_COMPILER__sunBoard_unscanned_Debug I$:/CUBEMX/prj/sunBoard/startup_stm32g030xx.s || cmake_object_order_depends_target_sunBoard
   DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
@@ -336,8 +336,6 @@ build CMakeFiles/sunBoard.dir/startup_stm32g030xx.s.obj: ASM_COMPILER__sunBoard_
   INCLUDES = -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\sunBoard.dir
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
-  TARGET_PDB = sunBoard.pdb
 
 
 # =============================================================================
@@ -347,21 +345,20 @@ build CMakeFiles/sunBoard.dir/startup_stm32g030xx.s.obj: ASM_COMPILER__sunBoard_
 #############################################
 # Link the executable sunBoard.elf
 
-build sunBoard.elf: C_EXECUTABLE_LINKER__sunBoard_Debug CMakeFiles/sunBoard.dir/Core/Src/main.c.obj CMakeFiles/sunBoard.dir/Core/Src/gpio.c.obj CMakeFiles/sunBoard.dir/Core/Src/i2c.c.obj CMakeFiles/sunBoard.dir/Core/Src/usart.c.obj CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_hal_msp.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c_ex.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c.obj CMakeFiles/sunBoard.dir/Core/Src/system_stm32g0xx.c.obj CMakeFiles/sunBoard.dir/Core/Src/sysmem.c.obj CMakeFiles/sunBoard.dir/Core/Src/syscalls.c.obj CMakeFiles/sunBoard.dir/startup_stm32g030xx.s.obj
+build sunBoard.elf: C_EXECUTABLE_LINKER__sunBoard_Debug CMakeFiles/sunBoard.dir/Core/Src/main.c.obj CMakeFiles/sunBoard.dir/Core/Src/key.c.obj CMakeFiles/sunBoard.dir/Core/Src/PCF8563.c.obj CMakeFiles/sunBoard.dir/Core/Src/motor.c.obj CMakeFiles/sunBoard.dir/Core/Src/TM1650.c.obj CMakeFiles/sunBoard.dir/Core/Src/myFlash.c.obj CMakeFiles/sunBoard.dir/Core/Src/gpio.c.obj CMakeFiles/sunBoard.dir/Core/Src/dma.c.obj CMakeFiles/sunBoard.dir/Core/Src/i2c.c.obj CMakeFiles/sunBoard.dir/Core/Src/tim.c.obj CMakeFiles/sunBoard.dir/Core/Src/usart.c.obj CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_it.c.obj CMakeFiles/sunBoard.dir/Core/Src/stm32g0xx_hal_msp.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c_ex.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c.obj CMakeFiles/sunBoard.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c.obj CMakeFiles/sunBoard.dir/Core/Src/system_stm32g0xx.c.obj CMakeFiles/sunBoard.dir/Core/Src/sysmem.c.obj CMakeFiles/sunBoard.dir/Core/Src/syscalls.c.obj CMakeFiles/sunBoard.dir/startup_stm32g030xx.s.obj
   FLAGS = -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g
   OBJECT_DIR = CMakeFiles\sunBoard.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\sunBoard.dir\
   TARGET_FILE = sunBoard.elf
-  TARGET_PDB = sunBoard.pdb
+  TARGET_PDB = sunBoard.elf.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D I:\CUBEMX\prj\sunBoard && I:\cubeclt\cube\STM32CubeCLT_1.16.0\CMake\bin\cmake-gui.exe -SI:\CUBEMX\prj\sunBoard -BI:\CUBEMX\prj\sunBoard"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D I:\CUBEMX\prj\sunBoard && I:\cubeclt\cube\STM32CubeCLT_1.16.0\CMake\bin\cmake-gui.exe -SI:\CUBEMX\prj\sunBoard -BI:\CUBEMX\prj\sunBoard"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -373,7 +370,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D I:\CUBEMX\prj\sunBoard && I:\cubeclt\cube\STM32CubeCLT_1.16.0\CMake\bin\cmake.exe --regenerate-during-build -SI:\CUBEMX\prj\sunBoard -BI:\CUBEMX\prj\sunBoard"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D I:\CUBEMX\prj\sunBoard && I:\cubeclt\cube\STM32CubeCLT_1.16.0\CMake\bin\cmake.exe --regenerate-during-build -SI:\CUBEMX\prj\sunBoard -BI:\CUBEMX\prj\sunBoard"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -390,7 +387,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build cmake/stm32cubemx/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D I:\CUBEMX\prj\sunBoard\cmake\stm32cubemx && I:\cubeclt\cube\STM32CubeCLT_1.16.0\CMake\bin\cmake-gui.exe -SI:\CUBEMX\prj\sunBoard -BI:\CUBEMX\prj\sunBoard"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D I:\CUBEMX\prj\sunBoard\cmake\stm32cubemx && I:\cubeclt\cube\STM32CubeCLT_1.16.0\CMake\bin\cmake-gui.exe -SI:\CUBEMX\prj\sunBoard -BI:\CUBEMX\prj\sunBoard"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -402,7 +399,7 @@ build cmake/stm32cubemx/edit_cache: phony cmake/stm32cubemx/CMakeFiles/edit_cach
 # Utility command for rebuild_cache
 
 build cmake/stm32cubemx/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D I:\CUBEMX\prj\sunBoard\cmake\stm32cubemx && I:\cubeclt\cube\STM32CubeCLT_1.16.0\CMake\bin\cmake.exe --regenerate-during-build -SI:\CUBEMX\prj\sunBoard -BI:\CUBEMX\prj\sunBoard"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D I:\CUBEMX\prj\sunBoard\cmake\stm32cubemx && I:\cubeclt\cube\STM32CubeCLT_1.16.0\CMake\bin\cmake.exe --regenerate-during-build -SI:\CUBEMX\prj\sunBoard -BI:\CUBEMX\prj\sunBoard"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -438,14 +435,14 @@ build cmake/stm32cubemx/all: phony
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake CMakeLists.txt I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeASMCompiler.cmake.in I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeNinjaFindMake.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystem.cmake.in I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeTestASMCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake cmake/gcc-arm-none-eabi.cmake cmake/stm32cubemx/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake CMakeLists.txt I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake cmake/gcc-arm-none-eabi.cmake cmake/stm32cubemx/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake CMakeLists.txt I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeASMCompiler.cmake.in I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeNinjaFindMake.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystem.cmake.in I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeTestASMCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake cmake/gcc-arm-none-eabi.cmake cmake/stm32cubemx/CMakeLists.txt: phony
+build CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake CMakeLists.txt I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake I$:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake cmake/gcc-arm-none-eabi.cmake cmake/stm32cubemx/CMakeLists.txt: phony
 
 
 #############################################

@@ -7,15 +7,57 @@
 },
 {
   "directory": "I:/CUBEMX/prj/sunBoard",
+  "command": "I:\\cubeclt\\cube\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sunBoard.dir\\Core\\Src\\key.c.obj -c I:\\CUBEMX\\prj\\sunBoard\\Core\\Src\\key.c",
+  "file": "I:\\CUBEMX\\prj\\sunBoard\\Core\\Src\\key.c",
+  "output": "CMakeFiles\\sunBoard.dir\\Core\\Src\\key.c.obj"
+},
+{
+  "directory": "I:/CUBEMX/prj/sunBoard",
+  "command": "I:\\cubeclt\\cube\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sunBoard.dir\\Core\\Src\\PCF8563.c.obj -c I:\\CUBEMX\\prj\\sunBoard\\Core\\Src\\PCF8563.c",
+  "file": "I:\\CUBEMX\\prj\\sunBoard\\Core\\Src\\PCF8563.c",
+  "output": "CMakeFiles\\sunBoard.dir\\Core\\Src\\PCF8563.c.obj"
+},
+{
+  "directory": "I:/CUBEMX/prj/sunBoard",
+  "command": "I:\\cubeclt\\cube\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sunBoard.dir\\Core\\Src\\motor.c.obj -c I:\\CUBEMX\\prj\\sunBoard\\Core\\Src\\motor.c",
+  "file": "I:\\CUBEMX\\prj\\sunBoard\\Core\\Src\\motor.c",
+  "output": "CMakeFiles\\sunBoard.dir\\Core\\Src\\motor.c.obj"
+},
+{
+  "directory": "I:/CUBEMX/prj/sunBoard",
+  "command": "I:\\cubeclt\\cube\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sunBoard.dir\\Core\\Src\\TM1650.c.obj -c I:\\CUBEMX\\prj\\sunBoard\\Core\\Src\\TM1650.c",
+  "file": "I:\\CUBEMX\\prj\\sunBoard\\Core\\Src\\TM1650.c",
+  "output": "CMakeFiles\\sunBoard.dir\\Core\\Src\\TM1650.c.obj"
+},
+{
+  "directory": "I:/CUBEMX/prj/sunBoard",
+  "command": "I:\\cubeclt\\cube\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sunBoard.dir\\Core\\Src\\myFlash.c.obj -c I:\\CUBEMX\\prj\\sunBoard\\Core\\Src\\myFlash.c",
+  "file": "I:\\CUBEMX\\prj\\sunBoard\\Core\\Src\\myFlash.c",
+  "output": "CMakeFiles\\sunBoard.dir\\Core\\Src\\myFlash.c.obj"
+},
+{
+  "directory": "I:/CUBEMX/prj/sunBoard",
   "command": "I:\\cubeclt\\cube\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sunBoard.dir\\Core\\Src\\gpio.c.obj -c I:\\CUBEMX\\prj\\sunBoard\\Core\\Src\\gpio.c",
   "file": "I:\\CUBEMX\\prj\\sunBoard\\Core\\Src\\gpio.c",
   "output": "CMakeFiles\\sunBoard.dir\\Core\\Src\\gpio.c.obj"
 },
 {
   "directory": "I:/CUBEMX/prj/sunBoard",
+  "command": "I:\\cubeclt\\cube\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sunBoard.dir\\Core\\Src\\dma.c.obj -c I:\\CUBEMX\\prj\\sunBoard\\Core\\Src\\dma.c",
+  "file": "I:\\CUBEMX\\prj\\sunBoard\\Core\\Src\\dma.c",
+  "output": "CMakeFiles\\sunBoard.dir\\Core\\Src\\dma.c.obj"
+},
+{
+  "directory": "I:/CUBEMX/prj/sunBoard",
   "command": "I:\\cubeclt\\cube\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sunBoard.dir\\Core\\Src\\i2c.c.obj -c I:\\CUBEMX\\prj\\sunBoard\\Core\\Src\\i2c.c",
   "file": "I:\\CUBEMX\\prj\\sunBoard\\Core\\Src\\i2c.c",
   "output": "CMakeFiles\\sunBoard.dir\\Core\\Src\\i2c.c.obj"
+},
+{
+  "directory": "I:/CUBEMX/prj/sunBoard",
+  "command": "I:\\cubeclt\\cube\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Core/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -II:/CUBEMX/prj/sunBoard/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m0plus  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sunBoard.dir\\Core\\Src\\tim.c.obj -c I:\\CUBEMX\\prj\\sunBoard\\Core\\Src\\tim.c",
+  "file": "I:\\CUBEMX\\prj\\sunBoard\\Core\\Src\\tim.c",
+  "output": "CMakeFiles\\sunBoard.dir\\Core\\Src\\tim.c.obj"
 },
 {
   "directory": "I:/CUBEMX/prj/sunBoard",

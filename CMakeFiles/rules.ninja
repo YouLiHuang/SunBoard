@@ -35,7 +35,7 @@ rule C_COMPILER__sunBoard_unscanned_Debug
 # Rule for linking C executable.
 
 rule C_EXECUTABLE_LINKER__sunBoard_Debug
-  command = cmd.exe /C "$PRE_LINK && I:\cubeclt\cube\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $FLAGS -mcpu=cortex-m0plus  -T "I:/CUBEMX/prj/sunBoard/STM32G030F6Px_FLASH.ld" --specs=nano.specs -Wl,-Map=sunBoard.map -Wl,--gc-sections -Wl,--start-group -lc -lm -Wl,--end-group -Wl,--print-memory-usage $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && I:\cubeclt\cube\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $FLAGS -mcpu=cortex-m0plus  -T "I:/CUBEMX/prj/sunBoard/STM32G030F6Px_FLASH.ld" --specs=nano.specs -Wl,-Map=sunBoard.map -Wl,--gc-sections -Wl,--start-group -lc -lm -Wl,--end-group -Wl,--print-memory-usage $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
 
