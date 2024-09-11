@@ -1,8 +1,6 @@
 #include "PCF8563.h"
 
-PCF8563_Controller pcf8563_ctrl;
-static data_time user_time;
-static uint8_t databuffer[16] = {0};
+
 
 static uint8_t BCD_To_Dec(uint8_t bcd)
 {
@@ -133,32 +131,22 @@ static HAL_StatusTypeDef time_updata(void *pointer)
     return status;
 }
 
-HAL_StatusTypeDef PCF8563_init(PCF8563_Controller *pcf_ctrl)
+static HAL_StatusTypeDef PCF8563_init(PCF8563_Controller *pcf_ctrl)
 {
-    uint64_t readbuffer[7];
-    Data_Read_From_Flash(FLASH_USER_START_ADDR, readbuffer, 7);
-    /*
-        user_time.Year = BCD_To_Dec(readbuffer[0]);
-        user_time.Month = BCD_To_Dec(readbuffer[0]);
-        user_time.Day = BCD_To_Dec(readbuffer[0]);
-        user_time.Hour = BCD_To_Dec(readbuffer[0]);
-        user_time.Min = BCD_To_Dec(readbuffer[0]);
-        user_time.Second = BCD_To_Dec(readbuffer[0]);
-        user_time.WeekDays = BCD_To_Dec(readbuffer[0]);
-    */
-    user_time.Year = 24;
-    user_time.Month = 9;
-    user_time.Day = 1;
-    user_time.Hour = 9;
-    user_time.Min = 0;
-    user_time.Second = 0;
-    user_time.WeekDays = 1;
+    // uint64_t readbuffer[7];
+    //  Data_Read_From_Flash(FLASH_USER_START_ADDR, readbuffer, 7);
 
+    pcf_ctrl->data_time = (data_time *)malloc(sizeof(data_time));
+    pcf_ctrl->data_time->Year = 24;
+    pcf_ctrl->data_time->Month = 9;
+    pcf_ctrl->data_time->Day = 1;
+    pcf_ctrl->data_time->Hour = 0;
+    pcf_ctrl->data_time->Second = 0;
+    pcf_ctrl->data_time->WeekDays = 1;
+    pcf_ctrl->read_buffer = (uint8_t *)malloc(sizeof(uint8_t) * 16);
     pcf_ctrl->timer = &htim1;
-    pcf_ctrl->data_time = &user_time;
-    pcf_ctrl->read_buffer = databuffer;
-    pcf8563_ctrl.timeFlash = TIME_WAIT;
-    pcf8563_ctrl.timehourFlash = HOUR_IDEAL;
+    pcf_ctrl->timeFlash = TIME_WAIT;
+    pcf_ctrl->timehourFlash = HOUR_IDEAL;
     pcf_ctrl->time_updata = time_updata;
 
     HAL_StatusTypeDef status;
@@ -184,7 +172,7 @@ HAL_StatusTypeDef PCF8563_init(PCF8563_Controller *pcf_ctrl)
     */
 
     // 完成初次时间更新
-    status = PCF8563_read_time(pcf8563_ctrl.read_buffer);
+    status = PCF8563_read_time(pcf_ctrl->read_buffer);
     if (status != HAL_OK)
     {
         return status;
@@ -198,4 +186,27 @@ HAL_StatusTypeDef PCF8563_init(PCF8563_Controller *pcf_ctrl)
     }
 
     return status;
+}
+
+PCF8563_Controller *newPCF8563()
+{
+    PCF8563_Controller *PCF8563 = (PCF8563_Controller *)malloc(sizeof(PCF8563_Controller));
+
+    if (PCF8563 != NULL)
+    {
+        PCF8563_init(PCF8563);
+        return PCF8563;
+    }
+}
+
+bool deletePCF8563(PCF8563_Controller *pcf)
+{
+    if (pcf != NULL)
+    {
+        free(pcf->read_buffer);
+        free(pcf->data_time);
+        free(pcf);
+        return true;
+    }
+    return false;
 }

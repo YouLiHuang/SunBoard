@@ -28,6 +28,8 @@
 #define DIG3_ADRESS 0x6C
 #define DIG4_ADRESS 0x6E
 
+// 数据长度
+#define DATA_LEN 4
 typedef enum
 {
     CURSOROFF = 0xff,
@@ -70,11 +72,12 @@ typedef struct
     void (*TM1650_cursorMove)(void *TM1650, CurDir dir);
     void (*TM1650_cursor_value_set)(void *TM1650);
     void (*TM1650_cursorFlash_ctrl)(void *TM1650);
-    void (*TM1650_show_time)(uint8_t hour, uint8_t min);
+    void (*TM1650_show_time)(void *tm1650, uint8_t hour, uint8_t min);
 
 } tm1650;
 
-void TM1650_init(tm1650 *tm1650, uint8_t param);
+tm1650 *newTM1650(uint8_t init_Light);
+bool deleteTM1650(tm1650 *tm);
 void TM1650_display_pos(uint8_t pos, uint8_t num);
 void TM1650_clear(cursorPos pos, uint8_t all);
 

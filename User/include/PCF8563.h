@@ -30,20 +30,23 @@ typedef struct
     uint8_t Second;
 } data_time;
 
-typedef enum{
-    TIME_OK=0x00,
+typedef enum
+{
+    TIME_OK = 0x00,
     TIME_WAIT
-}TimeFlushFlag;
+} TimeFlushFlag;
 
-typedef enum{
-    HOUR_UPDATA=0x00,
+typedef enum
+{
+    HOUR_UPDATA = 0x00,
     HOUR_IDEAL
-}TimeHourFlash;
+} TimeHourFlash;
 
-typedef enum{
-    RESET_MODE=0x00,
+typedef enum
+{
+    RESET_MODE = 0x00,
     FURST_MODE
-}Init_Mode;
+} Init_Mode;
 
 typedef struct
 {
@@ -57,7 +60,8 @@ typedef struct
 
 } PCF8563_Controller;
 
-HAL_StatusTypeDef PCF8563_init(PCF8563_Controller *pcf_ctrl);
+PCF8563_Controller *newPCF8563();
+bool deletePCF8563(PCF8563_Controller *pcf);
 HAL_StatusTypeDef PCF8563_set_time(uint8_t Years,
                                    uint8_t Months,
                                    uint8_t WeekDays,

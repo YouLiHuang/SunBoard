@@ -1,9 +1,8 @@
 #include "key.h"
 
-userkey key0, key1, key2;
-extern tm1650 TM1650;
-extern PCF8563_Controller pcf8563_ctrl;
-extern Motor_Controller Motor_Ctrl;
+extern tm1650 *TM1650;
+extern PCF8563_Controller *Pcf8563_ctrl;
+extern Motor_Controller *Motor_Ctrl;
 extern MyUart myuart;
 
 static HAL_StatusTypeDef keyRespnse(void *poniter)
@@ -25,6 +24,8 @@ static HAL_StatusTypeDef keyRespnse(void *poniter)
     {
         key->longlongPressCallback(poniter);
     }
+
+    return HAL_OK;
 }
 
 static HAL_StatusTypeDef singleClickedCallback(void *pointer)
@@ -39,36 +40,36 @@ static HAL_StatusTypeDef singleClickedCallback(void *pointer)
     {
     case 0: /*时间设定*/
     {
-        if (Motor_Ctrl.mode == MOTOR_CORRECT_MODR)
+        if (Motor_Ctrl->mode == MOTOR_CORRECT_MODR)
         {
-            Motor_Ctrl.motor_stop(&Motor_Ctrl);
+            Motor_Ctrl->motor_stop(&Motor_Ctrl);
         }
-        TM1650.TM1650_cursor_value_set(&TM1650);
+        TM1650->TM1650_cursor_value_set(&TM1650);
         break;
     }
 
     case 1: /*时间设定：左移 电机设定：左转*/
     {
-        if (Motor_Ctrl.mode == MOTOR_CORRECT_MODR)
+        if (Motor_Ctrl->mode == MOTOR_CORRECT_MODR)
         {
-            Motor_Ctrl.motor_left_correct(&Motor_Ctrl, SLOW_STEP);
+            Motor_Ctrl->motor_left_correct(&Motor_Ctrl, SLOW_STEP);
         }
-        if (TM1650.cursor != CURSOROFF) // 光标开启状态
+        if (TM1650->cursor != CURSOROFF) // 光标开启状态
         {
-            TM1650.TM1650_cursorMove(&TM1650, LEFT);
+            TM1650->TM1650_cursorMove(&TM1650, LEFT);
         }
         break;
     }
 
     case 2: /*电机设定：右转 时间设定：右移*/
     {
-        if (Motor_Ctrl.mode == MOTOR_CORRECT_MODR)
+        if (Motor_Ctrl->mode == MOTOR_CORRECT_MODR)
         {
-            Motor_Ctrl.motor_right_correct(&Motor_Ctrl, SLOW_STEP);
+            Motor_Ctrl->motor_right_correct(&Motor_Ctrl, SLOW_STEP);
         }
-        if (TM1650.cursor != CURSOROFF) // 光标开启状态
+        if (TM1650->cursor != CURSOROFF) // 光标开启状态
         {
-            TM1650.TM1650_cursorMove(&TM1650, RIGHT);
+            TM1650->TM1650_cursorMove(&TM1650, RIGHT);
         }
         break;
     }
@@ -95,37 +96,37 @@ static HAL_StatusTypeDef longPressCallback(void *poniter)
     case 0: /*时间设定*/
     {
         /*退出电机设定*/
-        if (Motor_Ctrl.mode == MOTOR_CORRECT_MODR)
+        if (Motor_Ctrl->mode == MOTOR_CORRECT_MODR)
         {
-            Motor_Ctrl.set_current_angle(&Motor_Ctrl, 0);
-            Motor_Ctrl.set_target_angle(&Motor_Ctrl, 0);
-            Motor_Ctrl.set_total_angle(&Motor_Ctrl, 0);
-            Motor_Ctrl.status_led_ctrl(&Motor_Ctrl, GPIO_PIN_RESET);
-            Motor_Ctrl.mode = MOTOR_IDEAL_MODE;
+            Motor_Ctrl->set_current_angle(&Motor_Ctrl, 0);
+            Motor_Ctrl->set_target_angle(&Motor_Ctrl, 0);
+            Motor_Ctrl->set_total_angle(&Motor_Ctrl, 0);
+            Motor_Ctrl->status_led_ctrl(&Motor_Ctrl, GPIO_PIN_RESET);
+            Motor_Ctrl->mode = MOTOR_IDEAL_MODE;
             break;
         }
         /*时间设定模式入口*/
-        if (TM1650.cursor == CURSOROFF) // 光标off状态则开启光标，进入时间设定模式
+        if (TM1650->cursor == CURSOROFF) // 光标off状态则开启光标，进入时间设定模式
         {
-            HAL_TIM_Base_Stop_IT(pcf8563_ctrl.timer); // 关闭时间获取定时器
+            HAL_TIM_Base_Stop_IT(Pcf8563_ctrl->timer); // 关闭时间获取定时器
             /*获取当前时间*/
-            pcf8563_ctrl.time_updata(&pcf8563_ctrl);
-            TM1650.TM1650_cursorOnOff(&TM1650, DSPON);
+            Pcf8563_ctrl->time_updata(&Pcf8563_ctrl);
+            TM1650->TM1650_cursorOnOff(&TM1650, DSPON);
             break;
         }
         else
         {
-            HAL_TIM_Base_Stop_IT(pcf8563_ctrl.timer); // 停止时间获取定时器
-            TM1650.TM1650_cursorOnOff(&TM1650, DSPOFF);
+            HAL_TIM_Base_Stop_IT(Pcf8563_ctrl->timer); // 停止时间获取定时器
+            TM1650->TM1650_cursorOnOff(&TM1650, DSPOFF);
             /*获取当前日期*/
-            pcf8563_ctrl.time_updata(&pcf8563_ctrl);
-            uint8_t Year = pcf8563_ctrl.data_time->Year;
-            uint8_t Month = pcf8563_ctrl.data_time->Month;
-            uint8_t Day = pcf8563_ctrl.data_time->Day;
-            uint8_t WeekDay = pcf8563_ctrl.data_time->WeekDays;
+            Pcf8563_ctrl->time_updata(&Pcf8563_ctrl);
+            uint8_t Year = Pcf8563_ctrl->data_time->Year;
+            uint8_t Month = Pcf8563_ctrl->data_time->Month;
+            uint8_t Day = Pcf8563_ctrl->data_time->Day;
+            uint8_t WeekDay = Pcf8563_ctrl->data_time->WeekDays;
             /*获取按键设定的时间*/
-            uint8_t hour = TM1650.numList[0] * 10 + TM1650.numList[1];
-            uint8_t min = TM1650.numList[2] * 10 + TM1650.numList[3];
+            uint8_t hour = TM1650->numList[0] * 10 + TM1650->numList[1];
+            uint8_t min = TM1650->numList[2] * 10 + TM1650->numList[3];
             /*设定新的时间*/
             PCF8563_set_time(Year,
                              Month,
@@ -135,19 +136,20 @@ static HAL_StatusTypeDef longPressCallback(void *poniter)
                              min,
                              0);
             /*刷新时间*/
-            pcf8563_ctrl.time_updata(&pcf8563_ctrl);
-            TM1650.TM1650_show_time(pcf8563_ctrl.data_time->Hour,
-                                    pcf8563_ctrl.data_time->Min);
+            Pcf8563_ctrl->time_updata(&Pcf8563_ctrl);
+            TM1650->TM1650_show_time(TM1650,
+                                     Pcf8563_ctrl->data_time->Hour,
+                                     Pcf8563_ctrl->data_time->Min);
 
             // 存到flash：年、月、日、时、分、秒、星期
             /*
-            if (Data_Save_To_Flash(FLASH_USER_START_ADDR, pcf8563_ctrl.read_buffer, 7) != HAL_OK)
+            if (Data_Save_To_Flash(FLASH_USER_START_ADDR, Pcf8563_ctrl->read_buffer, 7) != HAL_OK)
             {
                 return HAL_ERROR;
             }
             */
 
-            HAL_TIM_Base_Start_IT(pcf8563_ctrl.timer); // 重新开启时间获取定时器
+            HAL_TIM_Base_Start_IT(Pcf8563_ctrl->timer); // 重新开启时间获取定时器
             break;
         }
     }
@@ -156,9 +158,9 @@ static HAL_StatusTypeDef longPressCallback(void *poniter)
     {
 
         /*电机快速修正模式（左转）*/
-        if (Motor_Ctrl.mode == MOTOR_CORRECT_MODR)
+        if (Motor_Ctrl->mode == MOTOR_CORRECT_MODR)
         {
-            Motor_Ctrl.motor_left_correct(&Motor_Ctrl, FAST_STEP);
+            Motor_Ctrl->motor_left_correct(&Motor_Ctrl, FAST_STEP);
             break;
         }
         // 系统复位
@@ -174,9 +176,9 @@ static HAL_StatusTypeDef longPressCallback(void *poniter)
     case 2:
     {
         /*电机快速修正模式（右转）*/
-        if (Motor_Ctrl.mode == MOTOR_CORRECT_MODR)
+        if (Motor_Ctrl->mode == MOTOR_CORRECT_MODR)
         {
-            Motor_Ctrl.motor_right_correct(&Motor_Ctrl, FAST_STEP);
+            Motor_Ctrl->motor_right_correct(&Motor_Ctrl, FAST_STEP);
             break;
         }
     }
@@ -203,13 +205,13 @@ static HAL_StatusTypeDef doubleClickCallback(void *poniter)
     case 0:
     {
         /*退出电机设定*/
-        if (Motor_Ctrl.mode == MOTOR_CORRECT_MODR)
+        if (Motor_Ctrl->mode == MOTOR_CORRECT_MODR)
         {
-            Motor_Ctrl.set_current_angle(&Motor_Ctrl, 0);
-            Motor_Ctrl.set_target_angle(&Motor_Ctrl, 0);
-            Motor_Ctrl.set_total_angle(&Motor_Ctrl, 0);
-            Motor_Ctrl.status_led_ctrl(&Motor_Ctrl, GPIO_PIN_RESET);
-            Motor_Ctrl.mode = MOTOR_IDEAL_MODE;
+            Motor_Ctrl->set_current_angle(&Motor_Ctrl, 0);
+            Motor_Ctrl->set_target_angle(&Motor_Ctrl, 0);
+            Motor_Ctrl->set_total_angle(&Motor_Ctrl, 0);
+            Motor_Ctrl->status_led_ctrl(&Motor_Ctrl, GPIO_PIN_RESET);
+            Motor_Ctrl->mode = MOTOR_IDEAL_MODE;
             break;
         }
     }
@@ -244,26 +246,26 @@ static HAL_StatusTypeDef longlongPressCallback(void *pointer)
     case 0:
     {
         /*电机设定模式进入/退出*/
-        if (Motor_Ctrl.mode == MOTOR_IDEAL_MODE)
+        if (Motor_Ctrl->mode == MOTOR_IDEAL_MODE)
         {
-            Motor_Ctrl.mode = MOTOR_CORRECT_MODR;
-            Motor_Ctrl.status_led_ctrl(&Motor_Ctrl, GPIO_PIN_SET);
+            Motor_Ctrl->mode = MOTOR_CORRECT_MODR;
+            Motor_Ctrl->status_led_ctrl(&Motor_Ctrl, GPIO_PIN_SET);
         }
         break;
     }
     case 1:
     {
-        if (Motor_Ctrl.mode == MOTOR_CORRECT_MODR)
+        if (Motor_Ctrl->mode == MOTOR_CORRECT_MODR)
         {
-            Motor_Ctrl.motor_left_correct(&Motor_Ctrl, SLOW_STEP);
+            Motor_Ctrl->motor_left_correct(&Motor_Ctrl, SLOW_STEP);
         }
         break;
     }
     case 2:
     {
-        if (Motor_Ctrl.mode == MOTOR_CORRECT_MODR)
+        if (Motor_Ctrl->mode == MOTOR_CORRECT_MODR)
         {
-            Motor_Ctrl.motor_right_correct(&Motor_Ctrl, SLOW_STEP);
+            Motor_Ctrl->motor_right_correct(&Motor_Ctrl, SLOW_STEP);
         }
         break;
     }
@@ -375,6 +377,8 @@ HAL_StatusTypeDef keyResponse(const userkey *key)
     default:
         break;
     }
+
+    return HAL_OK;
 }
 
 void keyDoubleClickCheck(userkey *key)
@@ -387,7 +391,7 @@ void keyDoubleClickCheck(userkey *key)
     key->press_count = 0;
 }
 
-void keyInit(userkey *key, uint8_t keynum)
+static void keyInit(userkey *key, uint8_t keynum)
 {
     key->keynum = keynum;
     key->score = 0;
@@ -401,4 +405,26 @@ void keyInit(userkey *key, uint8_t keynum)
     key->doubleClickCallback = doubleClickCallback;
     key->longlongPressCallback = longlongPressCallback;
     key->response = keyRespnse;
+}
+
+userkey *newKey(uint8_t keynum)
+{
+    userkey *key = (userkey *)malloc(sizeof(userkey));
+    if (key != NULL)
+    {
+        keyInit(key, keynum);
+        return key;
+    }
+
+    return NULL;
+}
+
+bool delete_key(userkey *key)
+{
+    if (key != NULL)
+    {
+        free(key);
+        return true;
+    }
+    return false;
 }

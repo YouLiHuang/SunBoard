@@ -52,7 +52,7 @@ typedef struct
 } userkey;
 
 GPIO_PinState keystatus(uint8_t keynum);
-void keyInit(userkey *key, uint8_t keynum);
+userkey *newKey(uint8_t keynum);
 void keyActionScan(userkey *key);
 void keyDoubleClickCheck(userkey *key);
 HAL_StatusTypeDef keyResponse(const userkey *key);

@@ -50,11 +50,15 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-extern userkey key0, key1, key2;
-extern tm1650 TM1650;
-extern PCF8563_Controller pcf8563_ctrl;
+userkey *key0 = NULL;
+userkey *key1 = NULL;
+userkey *key2 = NULL;
+tm1650 *TM1650 = NULL;
+PCF8563_Controller *Pcf8563_ctrl = NULL;
+Motor_Controller *Motor_Ctrl = NULL;
+
 extern MyUart myuart;
-extern Motor_Controller Motor_Ctrl;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -76,9 +80,13 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-  keyInit(&key0, 0);
-  keyInit(&key1, 1);
-  keyInit(&key2, 2);
+  key0 = newKey(0);
+  key1 = newKey(1);
+  key2 = newKey(2);
+
+  TM1650 = newTM1650(TM1650_BRIGHT2);
+  Pcf8563_ctrl = newPCF8563();
+  Motor_Ctrl = newMotorCtrl();
 
   /* USER CODE END 1 */
 
@@ -111,9 +119,7 @@ int main(void)
   MX_TIM17_Init();
   /* USER CODE BEGIN 2 */
   MyUart_init(&myuart);
-  TM1650_init(&TM1650, TM1650_BRIGHT2);
-  PCF8563_init(&pcf8563_ctrl);
-  Motor_Ctrl_init(&Motor_Ctrl);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -125,49 +131,47 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
     // 主线程，刷新数码显示时间（20s）
-    if (pcf8563_ctrl.timeFlash == TIME_OK)
+    if (Pcf8563_ctrl->timeFlash == TIME_OK)
     {
-      pcf8563_ctrl.timeFlash = TIME_WAIT;
-      HAL_StatusTypeDef status = pcf8563_ctrl.time_updata(&pcf8563_ctrl);
+      Pcf8563_ctrl->timeFlash = TIME_WAIT;
+      HAL_StatusTypeDef status = Pcf8563_ctrl->time_updata(&Pcf8563_ctrl);
       if (HAL_OK == status)
       {
-        TM1650.TM1650_show_time(pcf8563_ctrl.data_time->Hour, pcf8563_ctrl.data_time->Min);
-
-        // 每次时间更新都存到flash：年、月、日、时、分、秒、星期
-        if (Data_Save_To_Flash(FLASH_USER_START_ADDR, pcf8563_ctrl.read_buffer, 7) != HAL_OK)
-        {
-          // myuart.uart_send(&myuart, "save fail \r\n");
-        }
+        TM1650->TM1650_show_time(TM1650, Pcf8563_ctrl->data_time->Hour, Pcf8563_ctrl->data_time->Min);
       }
 
       /*输出一些状态信息*/
-/*       char buffer[MAX_DATA_LENGTH] = {0};
-      sprintf(buffer,
-              "time is : %d : %d \r\n",
-              pcf8563_ctrl.data_time->Hour,
-              pcf8563_ctrl.data_time->Min);
-      myuart.uart_send(&myuart, buffer); */
+      /*       char buffer[MAX_DATA_LENGTH] = {0};
+            sprintf(buffer,
+                    "time is : %d : %d \r\n",
+                    Pcf8563_ctrl.data_time->Hour,
+                    Pcf8563_ctrl.data_time->Min);
+            myuart.uart_send(&myuart, buffer); */
     }
 
     // 主线程，随时间旋转电机
-    if (pcf8563_ctrl.timehourFlash == HOUR_UPDATA)
+    if (Pcf8563_ctrl->timehourFlash == HOUR_UPDATA)
     {
-      pcf8563_ctrl.timehourFlash = HOUR_IDEAL;
-      if (pcf8563_ctrl.data_time->Hour < 18 && pcf8563_ctrl.data_time->Hour > 9) // 白天转动
+      Pcf8563_ctrl->timehourFlash = HOUR_IDEAL;
+      if (Pcf8563_ctrl->data_time->Hour < 18 && Pcf8563_ctrl->data_time->Hour > 9) // 白天转动
       {
-        Motor_Ctrl.motor_right_correct(&Motor_Ctrl, ANGLE_PER_HOUR);
+        Motor_Ctrl->motor_right_correct(&Motor_Ctrl, ANGLE_PER_HOUR);
       }
-      else if (pcf8563_ctrl.data_time->Hour == 18) // 18：00复位
+      else if (Pcf8563_ctrl->data_time->Hour == 18) // 18：00复位
       {
-        Motor_Ctrl.motor_reset(&Motor_Ctrl);
+        Motor_Ctrl->motor_reset(&Motor_Ctrl);
       }
     }
 
     // 主线程，响应按键动作
-    key0.response(&key0);
-    key1.response(&key1);
-    key2.response(&key2);
+    key0->response(key0);
+    key1->response(key1);
+    key2->response(key2);
   }
+
+  deletePCF8563(Pcf8563_ctrl);
+  delete_MotorCtrl(Motor_Ctrl);
+  deleteTM1650(TM1650);
   /* USER CODE END 3 */
 }
 

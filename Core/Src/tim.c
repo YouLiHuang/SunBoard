@@ -21,10 +21,10 @@
 #include "tim.h"
 
 /* USER CODE BEGIN 0 */
-extern Motor_Controller Motor_Ctrl;
-extern userkey key0, key1, key2;
-extern tm1650 TM1650;
-extern PCF8563_Controller pcf8563_ctrl;
+extern Motor_Controller * Motor_Ctrl;
+extern userkey *key0, *key1, *key2;
+extern tm1650 * TM1650;
+extern PCF8563_Controller * Pcf8563_ctrl;
 /* USER CODE END 0 */
 
 TIM_HandleTypeDef htim1;
@@ -352,31 +352,31 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
   if (htim == &htim1) // time updata(60s)
   {
-    pcf8563_ctrl.timeFlash = TIME_OK;
+    Pcf8563_ctrl->timeFlash = TIME_OK;
   }
 
   if (htim == &htim3) // 按键扫描10ms
   {
-    keyActionScan(&key0);
-    keyActionScan(&key1);
-    keyActionScan(&key2);
+    keyActionScan(key0);
+    keyActionScan(key1);
+    keyActionScan(key2);
   }
 
   if (htim == &htim14) // 双击检测
   {
-    keyDoubleClickCheck(&key0);
-    keyDoubleClickCheck(&key1);
-    keyDoubleClickCheck(&key2);
+    keyDoubleClickCheck(key0);
+    keyDoubleClickCheck(key1);
+    keyDoubleClickCheck(key2);
   }
 
   if (htim == &htim16) // 光标闪烁控制
   {
-    TM1650.TM1650_cursorFlash_ctrl(&TM1650);
+    TM1650->TM1650_cursorFlash_ctrl(&TM1650);
   }
 
   if (htim == &htim17) // motor control
   {
-    Motor_Ctrl.motor_wave_ctrl(&Motor_Ctrl);
+    Motor_Ctrl->motor_wave_ctrl(&Motor_Ctrl);
   }
 }
 /* USER CODE END 1 */

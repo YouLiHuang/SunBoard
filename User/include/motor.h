@@ -80,6 +80,8 @@ typedef struct
 
 } Motor_Controller;
 
-void Motor_Ctrl_init(Motor_Controller *);
+
+Motor_Controller *newMotorCtrl();
+bool delete_MotorCtrl(Motor_Controller *ctrl);
 
 #endif

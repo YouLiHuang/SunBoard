@@ -1,5 +1,4 @@
 #include "motor.h"
-Motor_Controller Motor_Ctrl;
 
 static void set_current_angle(void *pointer, uint16_t angle)
 {
@@ -40,7 +39,6 @@ static uint16_t get_current_angle(void *pointer)
     return angle;
 }
 
-
 /* static uint16_t get_target_angle(void *pointer)
 {
     Motor_Controller *p = pointer;
@@ -56,17 +54,6 @@ static void motor_left_correct(void *pointer, uint8_t angle_step)
 
     p->set_current_angle(p, 0);
     p->set_target_angle(p, angle_step);
-    /*
-    uint8_t current_angle = p->get_current_angle(p);
-    if (current_angle + angle_step >= 360)
-    {
-        p->set_target_angle(p, 360);
-    }
-    else
-    {
-        p->set_target_angle(p, current_angle + angle_step);
-    }
-    */
 }
 
 static void motor_right_correct(void *pointer, uint8_t angle_step)
@@ -76,18 +63,6 @@ static void motor_right_correct(void *pointer, uint8_t angle_step)
 
     p->set_current_angle(p, 0);
     p->set_target_angle(p, angle_step);
-
-    /*
-    uint8_t current_angle = p->get_current_angle(p);
-    if (current_angle <= angle_step)
-    {
-        p->set_target_angle(p, 0);
-    }
-    else
-    {
-        p->set_target_angle(p, current_angle - angle_step);
-    }
-    */
 }
 
 static void motor_stop(void *pointer)
@@ -372,7 +347,7 @@ static void motor_wave_control(void *pointer)
 #endif
 }
 
-void Motor_Ctrl_init(Motor_Controller *motor_ctrl)
+static void Motor_Ctrl_init(Motor_Controller *motor_ctrl)
 {
 
     motor_ctrl->timer = &htim17;
@@ -400,4 +375,25 @@ void Motor_Ctrl_init(Motor_Controller *motor_ctrl)
     MOTORC_L;
     MOTORD_L;
     HAL_TIM_Base_Stop_IT(motor_ctrl->timer);
+}
+
+Motor_Controller *newMotorCtrl()
+{
+    Motor_Controller *motor_crtl = (Motor_Controller *)malloc(sizeof(Motor_Controller));
+    if (motor_crtl != NULL)
+    {
+        Motor_Ctrl_init(motor_crtl);
+        return motor_crtl;
+    }
+}
+
+bool delete_MotorCtrl(Motor_Controller *ctrl)
+{
+    if (ctrl != NULL)
+    {
+        free(ctrl);
+        return true;
+    }
+
+    return false;
 }

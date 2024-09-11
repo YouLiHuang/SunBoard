@@ -1,10 +1,7 @@
 #include "TM1650.h"
 
-tm1650 TM1650;
-
 static uint8_t LedCode[] = {0x3f, 0x06, 0x5b, 0x4f, 0x66, 0x6d, 0x7d, 0x07, 0x7f, 0x6f}; // 0~9
 static uint8_t write_buffer[4];
-static uint8_t NumberList[4] = {1, 2, 0, 0};
 
 static void TM1650_write_param(uint8_t param, uint16_t adress)
 {
@@ -219,17 +216,17 @@ static void cursor_value_set(void *TM1650, CurDir dir)
     }
 }
 
-static void TM1650_show_time(uint8_t hour, uint8_t min)
+static void TM1650_show_time(void *tm, uint8_t hour, uint8_t min)
 {
-
+    tm1650 *p = (tm1650 *)tm;
     TM1650_display_pos(0, hour / 10);
-    TM1650.numList[0] = hour / 10;
+    p->numList[0] = hour / 10;
     TM1650_display_pos(1, hour % 10);
-    TM1650.numList[1] = hour % 10;
+    p->numList[1] = hour % 10;
     TM1650_display_pos(2, min / 10);
-    TM1650.numList[2] = min / 10;
+    p->numList[2] = min / 10;
     TM1650_display_pos(3, min % 10);
-    TM1650.numList[3] = min % 10;
+    p->numList[3] = min % 10;
 }
 
 void cursor_flash_ctrl(void *TM1650)
@@ -250,11 +247,17 @@ void cursor_flash_ctrl(void *TM1650)
     }
 }
 
-void TM1650_init(tm1650 *tm1650, uint8_t init_Light)
+static void TM1650_init(tm1650 *tm1650, uint8_t init_Light)
 {
+
+    tm1650->numList = (uint8_t *)malloc(sizeof(uint8_t) * DATA_LEN);
+    tm1650->numList[0] = 1;
+    tm1650->numList[1] = 2;
+    tm1650->numList[2] = 0;
+    tm1650->numList[3] = 0;
+
     tm1650->timer = &htim16;
     tm1650->cursor = CURSOROFF;
-    tm1650->numList = NumberList;
     tm1650->dspStatus = DSPON;
     tm1650->TM1650_displayOnOff = displayOnOff;
     tm1650->TM1650_cursorOnOff = cursorOnOff;
@@ -270,4 +273,25 @@ void TM1650_init(tm1650 *tm1650, uint8_t init_Light)
     TM1650_write_param(LedCode[tm1650->numList[1]], DIG2_ADRESS);
     TM1650_write_param(LedCode[tm1650->numList[2]], DIG3_ADRESS);
     TM1650_write_param(LedCode[tm1650->numList[3]], DIG4_ADRESS);
+}
+
+tm1650 *newTM1650(uint8_t init_Light)
+{
+    tm1650 *tm = (tm1650 *)malloc(sizeof(tm1650));
+    if (tm != NULL)
+    {
+        TM1650_init(tm, init_Light);
+        return tm;
+    }
+}
+
+bool deleteTM1650(tm1650 *tm)
+{
+    if (tm != NULL)
+    {
+        free(tm->numList);
+        free(tm);
+    }
+
+    return false;
 }
