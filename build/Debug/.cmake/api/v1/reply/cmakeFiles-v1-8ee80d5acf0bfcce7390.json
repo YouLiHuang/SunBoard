@@ -148,6 +148,9 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "I:/cubeclt/cube/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "User/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

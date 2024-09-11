@@ -22,12 +22,6 @@ target_include_directories(stm32cubemx INTERFACE
 
 target_sources(stm32cubemx INTERFACE
     ../../Core/Src/main.c
-    #这几个文件，是我自己写用户代码，我在core下面加入
-    ../../Core/Src/key.c
-    ../../Core/Src/PCF8563.c
-    ../../Core/Src/motor.c
-    ../../Core/Src/TM1650.c
-    ../../Core/Src/myFlash.c
     ../../Core/Src/gpio.c
     ../../Core/Src/dma.c
     ../../Core/Src/i2c.c

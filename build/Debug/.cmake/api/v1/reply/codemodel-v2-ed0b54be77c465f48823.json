@@ -8,7 +8,8 @@
 					"build" : ".",
 					"childIndexes" : 
 					[
-						1
+						1,
+						2
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -32,6 +33,17 @@
 					"parentIndex" : 0,
 					"projectIndex" : 1,
 					"source" : "cmake/stm32cubemx"
+				},
+				{
+					"build" : "User",
+					"jsonFile" : "directory-User-Debug-d2c76ea8569ac7d4de2e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "User"
 				}
 			],
 			"name" : "Debug",
@@ -44,7 +56,8 @@
 					],
 					"directoryIndexes" : 
 					[
-						0
+						0,
+						2
 					],
 					"name" : "sunBoard",
 					"targetIndexes" : 
@@ -66,7 +79,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "sunBoard::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sunBoard-Debug-2d988fdfda7b67fd8a7b.json",
+					"jsonFile" : "target-sunBoard-Debug-e98c015a258f82ca3fe6.json",
 					"name" : "sunBoard",
 					"projectIndex" : 0
 				}
