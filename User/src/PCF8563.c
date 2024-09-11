@@ -1,7 +1,5 @@
 #include "PCF8563.h"
 
-
-
 static uint8_t BCD_To_Dec(uint8_t bcd)
 {
     return ((bcd & 0x70) >> 4) * 10 + (bcd & 0x0f);
