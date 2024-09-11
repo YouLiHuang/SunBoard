@@ -371,12 +371,12 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
   if (htim == &htim16) // 光标闪烁控制
   {
-    TM1650->TM1650_cursorFlash_ctrl(&TM1650);
+    TM1650->TM1650_cursorFlash_ctrl(TM1650);
   }
 
   if (htim == &htim17) // motor control
   {
-    Motor_Ctrl->motor_wave_ctrl(&Motor_Ctrl);
+    Motor_Ctrl->motor_wave_ctrl(Motor_Ctrl);
   }
 }
 /* USER CODE END 1 */

@@ -31,7 +31,7 @@ static HAL_StatusTypeDef keyRespnse(void *poniter)
 static HAL_StatusTypeDef singleClickedCallback(void *pointer)
 {
 
-    userkey *key = pointer;
+    userkey *key = (userkey *)pointer;
     key->flag = DEFAULT_STATUS;
     key->TaskStatus = KEY_BUSY;
     /*实现动作*/
@@ -42,9 +42,9 @@ static HAL_StatusTypeDef singleClickedCallback(void *pointer)
     {
         if (Motor_Ctrl->mode == MOTOR_CORRECT_MODR)
         {
-            Motor_Ctrl->motor_stop(&Motor_Ctrl);
+            Motor_Ctrl->motor_stop(Motor_Ctrl);
         }
-        TM1650->TM1650_cursor_value_set(&TM1650);
+        TM1650->TM1650_cursor_value_set(TM1650);
         break;
     }
 
@@ -52,11 +52,11 @@ static HAL_StatusTypeDef singleClickedCallback(void *pointer)
     {
         if (Motor_Ctrl->mode == MOTOR_CORRECT_MODR)
         {
-            Motor_Ctrl->motor_left_correct(&Motor_Ctrl, SLOW_STEP);
+            Motor_Ctrl->motor_left_correct(Motor_Ctrl, SLOW_STEP);
         }
         if (TM1650->cursor != CURSOROFF) // 光标开启状态
         {
-            TM1650->TM1650_cursorMove(&TM1650, LEFT);
+            TM1650->TM1650_cursorMove(TM1650, LEFT);
         }
         break;
     }
@@ -65,11 +65,11 @@ static HAL_StatusTypeDef singleClickedCallback(void *pointer)
     {
         if (Motor_Ctrl->mode == MOTOR_CORRECT_MODR)
         {
-            Motor_Ctrl->motor_right_correct(&Motor_Ctrl, SLOW_STEP);
+            Motor_Ctrl->motor_right_correct(Motor_Ctrl, SLOW_STEP);
         }
         if (TM1650->cursor != CURSOROFF) // 光标开启状态
         {
-            TM1650->TM1650_cursorMove(&TM1650, RIGHT);
+            TM1650->TM1650_cursorMove(TM1650, RIGHT);
         }
         break;
     }
@@ -82,11 +82,11 @@ static HAL_StatusTypeDef singleClickedCallback(void *pointer)
     return HAL_OK;
 }
 
-static HAL_StatusTypeDef longPressCallback(void *poniter)
+static HAL_StatusTypeDef longPressCallback(void *pointer)
 {
 
     /*实现长按动作*/
-    userkey *key = poniter;
+    userkey *key = (userkey *)pointer;
     key->flag = DEFAULT_STATUS;
     key->TaskStatus = KEY_BUSY;
     /*实现动作*/
@@ -98,10 +98,10 @@ static HAL_StatusTypeDef longPressCallback(void *poniter)
         /*退出电机设定*/
         if (Motor_Ctrl->mode == MOTOR_CORRECT_MODR)
         {
-            Motor_Ctrl->set_current_angle(&Motor_Ctrl, 0);
-            Motor_Ctrl->set_target_angle(&Motor_Ctrl, 0);
-            Motor_Ctrl->set_total_angle(&Motor_Ctrl, 0);
-            Motor_Ctrl->status_led_ctrl(&Motor_Ctrl, GPIO_PIN_RESET);
+            Motor_Ctrl->set_current_angle(Motor_Ctrl, 0);
+            Motor_Ctrl->set_target_angle(Motor_Ctrl, 0);
+            Motor_Ctrl->set_total_angle(Motor_Ctrl, 0);
+            Motor_Ctrl->status_led_ctrl(Motor_Ctrl, GPIO_PIN_RESET);
             Motor_Ctrl->mode = MOTOR_IDEAL_MODE;
             break;
         }
@@ -110,16 +110,16 @@ static HAL_StatusTypeDef longPressCallback(void *poniter)
         {
             HAL_TIM_Base_Stop_IT(Pcf8563_ctrl->timer); // 关闭时间获取定时器
             /*获取当前时间*/
-            Pcf8563_ctrl->time_updata(&Pcf8563_ctrl);
-            TM1650->TM1650_cursorOnOff(&TM1650, DSPON);
+            Pcf8563_ctrl->time_updata(Pcf8563_ctrl);
+            TM1650->TM1650_cursorOnOff(TM1650, DSPON);
             break;
         }
         else
         {
             HAL_TIM_Base_Stop_IT(Pcf8563_ctrl->timer); // 停止时间获取定时器
-            TM1650->TM1650_cursorOnOff(&TM1650, DSPOFF);
+            TM1650->TM1650_cursorOnOff(TM1650, DSPOFF);
             /*获取当前日期*/
-            Pcf8563_ctrl->time_updata(&Pcf8563_ctrl);
+            Pcf8563_ctrl->time_updata(Pcf8563_ctrl);
             uint8_t Year = Pcf8563_ctrl->data_time->Year;
             uint8_t Month = Pcf8563_ctrl->data_time->Month;
             uint8_t Day = Pcf8563_ctrl->data_time->Day;
@@ -136,7 +136,7 @@ static HAL_StatusTypeDef longPressCallback(void *poniter)
                              min,
                              0);
             /*刷新时间*/
-            Pcf8563_ctrl->time_updata(&Pcf8563_ctrl);
+            Pcf8563_ctrl->time_updata(Pcf8563_ctrl);
             TM1650->TM1650_show_time(TM1650,
                                      Pcf8563_ctrl->data_time->Hour,
                                      Pcf8563_ctrl->data_time->Min);
@@ -160,7 +160,7 @@ static HAL_StatusTypeDef longPressCallback(void *poniter)
         /*电机快速修正模式（左转）*/
         if (Motor_Ctrl->mode == MOTOR_CORRECT_MODR)
         {
-            Motor_Ctrl->motor_left_correct(&Motor_Ctrl, FAST_STEP);
+            Motor_Ctrl->motor_left_correct(Motor_Ctrl, FAST_STEP);
             break;
         }
         // 系统复位
@@ -178,7 +178,7 @@ static HAL_StatusTypeDef longPressCallback(void *poniter)
         /*电机快速修正模式（右转）*/
         if (Motor_Ctrl->mode == MOTOR_CORRECT_MODR)
         {
-            Motor_Ctrl->motor_right_correct(&Motor_Ctrl, FAST_STEP);
+            Motor_Ctrl->motor_right_correct(Motor_Ctrl, FAST_STEP);
             break;
         }
     }
@@ -191,11 +191,11 @@ static HAL_StatusTypeDef longPressCallback(void *poniter)
     return HAL_OK;
 }
 
-static HAL_StatusTypeDef doubleClickCallback(void *poniter)
+static HAL_StatusTypeDef doubleClickCallback(void *pointer)
 {
 
     /*实现双击动作*/
-    userkey *key = poniter;
+    userkey *key = (userkey *)pointer;
     key->flag = DEFAULT_STATUS;
     key->TaskStatus = KEY_BUSY;
     /*实现动作*/
@@ -207,10 +207,10 @@ static HAL_StatusTypeDef doubleClickCallback(void *poniter)
         /*退出电机设定*/
         if (Motor_Ctrl->mode == MOTOR_CORRECT_MODR)
         {
-            Motor_Ctrl->set_current_angle(&Motor_Ctrl, 0);
-            Motor_Ctrl->set_target_angle(&Motor_Ctrl, 0);
-            Motor_Ctrl->set_total_angle(&Motor_Ctrl, 0);
-            Motor_Ctrl->status_led_ctrl(&Motor_Ctrl, GPIO_PIN_RESET);
+            Motor_Ctrl->set_current_angle(Motor_Ctrl, 0);
+            Motor_Ctrl->set_target_angle(Motor_Ctrl, 0);
+            Motor_Ctrl->set_total_angle(Motor_Ctrl, 0);
+            Motor_Ctrl->status_led_ctrl(Motor_Ctrl, GPIO_PIN_RESET);
             Motor_Ctrl->mode = MOTOR_IDEAL_MODE;
             break;
         }
@@ -237,7 +237,7 @@ static HAL_StatusTypeDef doubleClickCallback(void *poniter)
 static HAL_StatusTypeDef longlongPressCallback(void *pointer)
 {
 
-    userkey *key = pointer;
+    userkey *key = (userkey *)pointer;
     key->TaskStatus = KEY_BUSY;
     /*实现动作*/
     /*...*/
@@ -249,7 +249,7 @@ static HAL_StatusTypeDef longlongPressCallback(void *pointer)
         if (Motor_Ctrl->mode == MOTOR_IDEAL_MODE)
         {
             Motor_Ctrl->mode = MOTOR_CORRECT_MODR;
-            Motor_Ctrl->status_led_ctrl(&Motor_Ctrl, GPIO_PIN_SET);
+            Motor_Ctrl->status_led_ctrl(Motor_Ctrl, GPIO_PIN_SET);
         }
         break;
     }
@@ -257,7 +257,7 @@ static HAL_StatusTypeDef longlongPressCallback(void *pointer)
     {
         if (Motor_Ctrl->mode == MOTOR_CORRECT_MODR)
         {
-            Motor_Ctrl->motor_left_correct(&Motor_Ctrl, SLOW_STEP);
+            Motor_Ctrl->motor_left_correct(Motor_Ctrl, SLOW_STEP);
         }
         break;
     }
@@ -265,7 +265,7 @@ static HAL_StatusTypeDef longlongPressCallback(void *pointer)
     {
         if (Motor_Ctrl->mode == MOTOR_CORRECT_MODR)
         {
-            Motor_Ctrl->motor_right_correct(&Motor_Ctrl, SLOW_STEP);
+            Motor_Ctrl->motor_right_correct(Motor_Ctrl, SLOW_STEP);
         }
         break;
     }
