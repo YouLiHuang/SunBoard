@@ -169,9 +169,9 @@ int main(void)
     key2->response(key2);
   }
 
-/*   deletePCF8563(Pcf8563_ctrl);
+  deletePCF8563(Pcf8563_ctrl);
   delete_MotorCtrl(Motor_Ctrl);
-  deleteTM1650(TM1650); */
+  deleteTM1650(TM1650);
   /* USER CODE END 3 */
 }
 
